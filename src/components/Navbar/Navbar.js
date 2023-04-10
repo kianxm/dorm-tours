@@ -77,7 +77,7 @@ const Navbar = () => {
                         <a href="#">About Us</a>
                     </li>
                     <li class="move-right btn">
-                        <a href="#">Best Pricing</a>
+                        <a href="#">Learn More</a>
                     </li>
                 </ul>
                 
