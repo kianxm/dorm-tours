@@ -80,7 +80,6 @@ const Navbar = () => {
                         <a href="#">Learn More</a>
                     </li>
                 </ul>
-                
             </nav>
         </div>
         </header>
