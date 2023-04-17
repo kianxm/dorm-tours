@@ -1,10 +1,11 @@
 :root {
     --main-color: rgb(179, 7, 56);
     --text-color: #222222;
+    --background-color: #fff;
 }
 
 html {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 body {
@@ -19,9 +20,9 @@ body {
 body::before {
     position: absolute;
     min-height: 100vh;
-    content: '';
+    /* content: ''; */
     width: 100%;
-    background: white;
+    background: #f9f9f9;
 }
 
 a {
@@ -67,10 +68,11 @@ nav {
     -o-border-radius: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
-    height: 60px;
-    background: #eee;
+    height: 70px;
+    background: #fff;
     justify-content: center;
     gap: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .logo {
@@ -123,7 +125,7 @@ nav {
     display: block;
     position: absolute;
     border-top: 3px solid var(--main-color);
-    background-color: #eee;
+    background-color: #fff; /*change submenu color*/
     z-index: 100;
     top: 16rem;
     transition: all 250ms ease;

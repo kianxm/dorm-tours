@@ -42,7 +42,7 @@ function Navbar() {
                                         <a href="#">Lounge</a>
                                     </li>
                                     <li>
-                                        <a href="#">Lobby</a>
+                                        <a href="https://my.treedis.com/tour/graham-lobby">Lobby</a>
                                     </li>
                                 </ul> 
                             </li>
