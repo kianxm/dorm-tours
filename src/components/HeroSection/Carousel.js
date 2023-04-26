@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 function IndivInter() {
   return (
     <Carousel>
-      <Carousel.Item interval={6000}>
+      <Carousel.Item interval={5000}>
         <img
           className="d-block w-100"
           src="/images/dorm_images/swig.png"
