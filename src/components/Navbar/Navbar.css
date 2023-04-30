@@ -4,15 +4,11 @@
     --background-color: #fff;
 }
 
-html {
+/* html {
     font-size: 12px;
-}
+} */
 
-body {
-    /* background-image: url(oranges.jpg); */
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
+/* body {
     min-height: 100vh;
     overflow-x: hidden;    
 }
@@ -20,10 +16,9 @@ body {
 body::before {
     position: absolute;
     min-height: 100vh;
-    /* content: ''; */
     width: 100%;
     background: #f9f9f9;
-}
+} */
 
 a {
     text-decoration: none;
@@ -57,7 +52,7 @@ header {
     transform: translateY(-50%);
     cursor: pointer;
     z-index: 1500;
-  }
+}
 
 nav {
     width: 100%;
@@ -71,23 +66,21 @@ nav {
     height: 70px;
     background: #fff;
     justify-content: center;
-    gap: 2rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0 8rem 0 8rem; 
 }
 
 .logo {
     display: inline;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--main-color);
     font-family: 'Kanit', sans-serif;
-    padding-left: 20rem;
 }
 
 .nav-list {
     display: flex;
     align-items: center;
     margin-left: auto;
-    padding-right: 20rem;
 }
 
 .nav-list li {
@@ -96,14 +89,13 @@ nav {
 }
 
 .sub-menu li {
-    line-height: 4rem;
+    line-height: 3rem;
 }
 
 .nav-list a {
     display: block;
     color: var(--text-color);
-    padding: 0 1.5rem;
-    font-size: 1.4rem;
+    padding: 0 1rem;
     text-transform: uppercase;
     transition: color 650ms;
     -webkit-transition: color 650ms;
@@ -113,7 +105,8 @@ nav {
     position: relative;
     width: 100%;
     align-items: center;
-    
+    font-size: 1rem; 
+    font-weight: 500;
 }
 
 .nav-list a:hover {
@@ -121,7 +114,7 @@ nav {
 }
 
 .sub-menu {
-    width: 20rem;
+    width: 12rem;
     display: block;
     position: absolute;
     border-top: 3px solid var(--main-color);
@@ -147,7 +140,7 @@ nav {
 }
 
 .sub-menu .sub-menu::before {
-    top: .9rem;
+    top: .7rem;
     left: -2.5rem;
     border: 1.2rem solid transparent;
     border-right-color: var(--main-color);
@@ -177,7 +170,7 @@ li.move-right {
     line-height: initial;
 }
 
-@media screen  and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .logo {
         padding: 0;
     }

@@ -1,6 +1,8 @@
 import React from 'react'
 import './HeroSection.css'
+import '../../App.css'
 import heroVideo from '../../videos/hero-video.mp4'
+import { Button } from '../Button/Button';
 
 function HeroSection() {
     return (
@@ -9,7 +11,14 @@ function HeroSection() {
             <h1>Dorms Reimagined</h1>
             <p>View a tour</p>
             <div className='hero-btns'>
-      </div>
+              <Button 
+              className='btns' 
+              buttonStyle='btn--outline'
+              buttonSize='btn--large'
+              >
+                GET STARTED
+              </Button>
+            </div>
         </div>
       );
 }

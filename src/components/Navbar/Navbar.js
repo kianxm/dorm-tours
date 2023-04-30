@@ -79,7 +79,7 @@ function Navbar() {
                     <li>
                         <a href="#">About Us</a>
                     </li>
-                    <li class="move-right btn">
+                    <li>
                         <a href="#">Learn More</a>
                     </li>
                 </ul>

@@ -1,14 +1,15 @@
 import React from 'react'
-// import Dorms from '../components/Dorms/Dorms'
-import Navbar from '../components/Navbar/Navbar'
+import '../App.css';
 import HeroSection from '../components/HeroSection/HeroSection'
+import Cards from '../components/Cards/Cards';
 
-export const Home = () => {
+function Home() {
   return (
     <>
-      <Navbar />
       <HeroSection />
-      {/* <Dorms /> */}
+      <Cards />
     </>
   )
 }
+
+export default Home;
