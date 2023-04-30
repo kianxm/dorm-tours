@@ -8,8 +8,8 @@ function HeroSection() {
     return (
         <div className="hero-container">
           <video src={heroVideo} autoPlay loop muted />
-            <h1>Dorms Reimagined</h1>
-            <p>View a tour</p>
+            <h1>Discover Your Dream Dorm Today</h1>
+            <p>Explore our top-rated dorms and find the perfect place to call home during your college years.<br/>With state-of-the-art amenities and a prime location on campus,<br/>you won't want to live anywhere else.</p>
             <div className='hero-btns'>
               <Button 
               className='btns' 
