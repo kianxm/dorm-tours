@@ -126,10 +126,14 @@
     margin-top: 3rem;
 }
 
+.testimonials__head svg{
+    color: var(--second-text-color);
+}
+
 .testimonial {
     position: relative;
     text-align: left;
-    margin-top: 5rem;
+    margin-top: 3rem;
     padding: 3rem 2rem;
     border-radius: 0 3rem 0 3rem;
     background: rgba(179, 7, 56, 0.753);
@@ -138,11 +142,11 @@
 }
 
 .testimonial__avatar img {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     overflow: hidden;
     position: absolute;
-    border-radius: 2rem;
+    border-radius: 2.5rem;
     border: 2px solid transparent;
     top: -2rem;
     left: calc(50% - 2rem);

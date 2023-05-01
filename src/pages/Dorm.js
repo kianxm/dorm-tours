@@ -110,7 +110,7 @@ const Dorm = (props) => {
 
     <section className='testimonials'>
       <div className='container testimonials__container'>
-        <h2 className='testimonials__head'>Testimonials <ImQuotesLeft/></h2>
+        <h2 className='testimonials__head'><ImQuotesLeft/> Testimonials</h2>
         <div className='testimonial'>
           <div className='testimonial__avatar'>
             <img src={avatar} alt={studentName}/>
