@@ -15,26 +15,20 @@ const Dorm = (props) => {
   return (
     <div className='dorm'>
       <div className='dorm__container'>
-        <iframe className='dorm__tour' src={dorm.embedLink} allowfullscreen></iframe>
+        {dorm.embedLink ?
+          <iframe className='dorm__tour' src={dorm.embedLink} allowFullScreen />
+          :
+          <img className='dorm__picture' src={dorm.picture} alt='Dorm' />
+        }
         <div className='dorm__details'>
           <h1> {dorm.title} </h1>
           <p> {dorm.address} </p>
           <div className='dorm__specifics'>
             <div className='dorm__specifics__row'>
-            {dorm.bedCount === 1 ?
-                <div style={{ display: 'flex', alignItems: 'center' }}>
-                <FaBed style={{ marginRight: '5px' }} />
-                <span>1 bed</span>
-              </div>
-              :
-              <div style={{ display: 'flex', alignItems: 'center' }}>
-                <FaBed style={{ marginRight: '5px' }} />
-                <span>{dorm.bedCount} beds</span>
-              </div>
-              }
+              <FaBed/> {dorm.bedCount} beds
             </div>
             <div className='dorm__specifics__row'>
-              {dorm.bathroom === 1 ?
+              {dorm.sinks === 1 ?
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                 <FaSink style={{ marginRight: '8px' }} />
                 <span>1 sink</span>
@@ -42,22 +36,12 @@ const Dorm = (props) => {
               :
               <div style={{ display: 'flex', alignItems: 'center' }}>
                 <FaSink style={{ marginRight: '8px' }} />
-                <span>{dorm.bathroom} sinks</span>
+                <span>{dorm.sinks} sinks</span>
               </div>
               }
             </div>
             <div className='dorm__specifics__row'>
-              {dorm.occupancy === 1 ?
-                <div style={{ display: 'flex', alignItems: 'center' }}>
-                <BsFillPeopleFill style={{ marginRight: '8px' }} />
-                <span>1 person</span>
-              </div>
-              :
-              <div style={{ display: 'flex', alignItems: 'center' }}>
-                <BsFillPeopleFill style={{ marginRight: '8px' }} />
-                <span>{dorm.occupancy} people</span>
-              </div>
-              }
+              <BsFillPeopleFill/> {dorm.occupancy} people
             </div>
           </div>
         </div>

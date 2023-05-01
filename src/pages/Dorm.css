@@ -25,6 +25,11 @@
     height: 600px;
 }
 
+.dorm__picture {
+    width: 1000px;
+    height: 600px;
+}
+
 .dorm__details {
     display: flex;
     flex-direction: column;
@@ -66,6 +71,7 @@
 
 .dorm__layout img {
     height: 300px;
+    margin-left: 40px;
 }
 
 .dimensions__text {

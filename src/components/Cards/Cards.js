@@ -14,7 +14,6 @@ import sobrato from '../../images/dorm_images/pics/sobrato.jpg'
 import swig from '../../images/dorm_images/pics/swig.jpg'
 
 // Additional Housing Dorms
-import villasLayout from '../../images/dorm_images/layouts/villas_layout.jpg'
 import villas from '../../images/additional_housing_images/villas.jpg'
 import nobili from '../../images/additional_housing_images/nobili.jpg'
 import neighborhood from '../../images/additional_housing_images/neighborhood.jpg'
@@ -41,13 +40,13 @@ const Cards = () => {
                         src={casa}
                         text='Casa-Italiana Hall'
                         label='Comfortable'
-                        path='/'
+                        path='/dorms/casa-hall'
                     />
                     <CardItem 
                         src={dunne}
                         text='Dunne Hall'
                         label='Lively'
-                        path='/'
+                        path='/dorms/dunne-hall'
                     />
                 </ul>
                 <ul className='cards__items'>
@@ -55,19 +54,19 @@ const Cards = () => {
                         src={finn}
                         text='Finn Hall'
                         label='Spacious'
-                        path='/'
+                        path='/dorms/finn-hall'
                     />
                     <CardItem 
                         src={flip}
                         text='Sanfillipo Hall'
                         label='Relaxed'
-                        path='/'
+                        path='/dorms/sanfillipo-hall'
                     />
                     <CardItem 
                         src={graham}
                         text='Graham Hall'
                         label='Well-rounded'
-                        path='/'
+                        path='/dorms/graham-hall'
                     />
                 </ul>
                 <ul className='cards__items'>
@@ -75,19 +74,19 @@ const Cards = () => {
                         src={mcwalsh}
                         text='McLaughlin-Walsh Hall'
                         label='Cozy'
-                        path='/'
+                        path='/dorms/mcwalsh-hall'
                     />
                     <CardItem 
                         src={sobrato}
                         text='Sobrato Hall'
                         label='Studious'
-                        path='/'
+                        path='/dorms/sobrato-hall'
                     />
                     <CardItem 
                         src={swig}
                         text='Swig Hall'
                         label='Active'
-                        path='/'
+                        path='/dorms/swig-hall'
                     />
                 </ul>
                 
@@ -102,19 +101,19 @@ const Cards = () => {
                         src={villas}
                         text='University Villas'
                         label='Upperclassmen'
-                        path='/home'
+                        path='/dorms/villas'
                     />
                     <CardItem 
                         src={nobili}
                         text='Nobili Hall'
                         label='Quiet'
-                        path='/home'
+                        path='/dorms/nobili-hall'
                     />
                     <CardItem 
                         src={neighborhood}
                         text='Neighborhood Units'
                         label='Upperclassmen'
-                        path='/home'
+                        path='https://www.scu.edu/living/residential-living-options/additional-undergraduate-housing/neighborhood-units/'
                     />
                 </div>
             </div>
@@ -128,19 +127,19 @@ const Cards = () => {
                         src={bellarmine}
                         text='Bellarmine Hall'
                         label='Upperclassmen'
-                        path='/home'
+                        path='https://www.scu.edu/living/residential-living-options/graduate/graduate--law-living-options/bellarmine/'
                     />
                     <CardItem 
                         src={parkavenue}
                         text='Park Avenue Apartments'
                         label='Upperclassmen'
-                        path='/home'
+                        path='https://www.scu.edu/living/residential-living-options/graduate/graduate--law-living-options/park-avenue-apartments/'
                     />
                     <CardItem 
                         src={stclare}
                         text='St. Clare Hall'
                         label='Upperclassmen'
-                        path='/home'
+                        path='https://www.scu.edu/living/residential-living-options/graduate/graduate--law-living-options/st-clare-hall/'
                     />
                 </div>
             </div>
