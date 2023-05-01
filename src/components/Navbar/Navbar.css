@@ -119,7 +119,7 @@ nav {
 }
 
 .sub-menu {
-    width: 12rem;
+    width: 13rem;
     display: block;
     position: absolute;
     border-top: 3px solid var(--main-color);
