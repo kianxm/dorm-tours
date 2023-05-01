@@ -213,7 +213,7 @@ const DormData = [
                 'Vanity: 43"W x 23"D x 34"H'
             ],
         amenities: 'Air conditioning, laundry facilities, study lounge',
-        embedLink: 'https://my.treedis.com/tour/graham-dorm-room-1',
+        embedLink: 'https://my.treedis.com/tour/graham-lobby',
         picture: graham,
         testimonials: [{
             studentName: 'Inez Low',
@@ -406,7 +406,7 @@ const DormData = [
                 'Mattress Dimensions: 80"L x 38"W x 7.5"H',
             ],
         amenities: 'Air conditioning, laundry facilities, study lounge, sky lounge, dance room, art room',
-        embedLink: 'https://my.treedis.com/tour/swig-dorm-room',
+        embedLink: 'https://my.treedis.com/tour/swig-lobby',
         picture: swig,
         testimonials: [{
             studentName: 'Max Schiff',
