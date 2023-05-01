@@ -1,5 +1,6 @@
 :root {
     --primary: #fff;
+    --main-color: rgb(179, 7, 56);
 }
 
 .btn {
@@ -35,7 +36,8 @@
 }
 
 .btn--medium.hover, .btn--large:hover {
-    background: #fff;
-    color: #242424;
+    background: var(--main-color);
+    /* color: #242424; */
+    color: #fff;
     transition: all 0.3s ease-out;
 }

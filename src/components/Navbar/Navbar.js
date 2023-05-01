@@ -1,92 +1,96 @@
-import './Navbar.css';
-import React from 'react';
+import React, { useState, useEffect } from "react";
+import { Button } from "../Button/Button";
+import { Link } from "react-router-dom";
+import { Link as Scroll } from "react-scroll";
+import "./Navbar.css";
 
 function Navbar() {
-    return(
-        <header>
-        <div class="container">
-            <nav>
-                <div class="menu-icons">
-                   <i class="fas fa-bars"></i>
-                   <i class="fas fa-times"></i>
-                </div>
-                <a href="/" class="logo">SCU Dorm Tours</a>
-                <ul class="nav-list">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Dorms <i class="fas fa-caret-down"></i></a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="#">Swig Hall <i class="fas fa-caret-down"></i></a>
-                                <ul class="sub-menu">
-                                    <li>
-                                        <a href="#">Bedroom</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Lounge</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Lobby</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                            <a href="#">Graham Hall <i class="fas fa-caret-down"></i></a>
-                                <ul class="sub-menu">
-                                    <li>
-                                        <a href="#">Bedroom</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Lounge</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://my.treedis.com/tour/graham-lobby">Lobby</a>
-                                    </li>
-                                </ul> 
-                            </li>
-                            <li>
-                            <a href="#">Finn Hall <i class="fas fa-caret-down"></i></a>
-                                <ul class="sub-menu">
-                                    <li>
-                                        <a href="#">Bedroom</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Lounge</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Lobby</a>
-                                    </li>
-                                </ul> 
-                            </li>
-                            <li>
-                            <a href="#">McWalsh Hall <i class="fas fa-caret-down"></i></a>
-                                <ul class="sub-menu">
-                                    <li>
-                                        <a href="#">Bedroom</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Lounge</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Lobby</a>
-                                    </li>
-                                </ul> 
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Learn More</a>
-                    </li>
-                </ul>
-            </nav>
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  useEffect(() => {
+    showButton();
+  }, []);
+
+  window.addEventListener("resize", showButton);
+
+  return (
+    <>
+      <nav className="navbar">
+        <div className="navbar-container">
+          <Scroll
+            to="hero"
+            className="navbar-logo"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1000}
+            onClick={closeMobileMenu}
+          >
+            SCU Virtual Dorm Tours
+          </Scroll>
+          <div className="menu-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"} />
+          </div>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Scroll
+                to="dorms"
+                className="nav-links"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={1000}
+                onClick={closeMobileMenu}
+              >
+                Dorms
+              </Scroll>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/about-us"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                About Us
+              </Link>
+            </li>
+
+            <li>
+              <Scroll
+                to="matterport"
+                className="nav-links"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1000}
+                onClick={closeMobileMenu}
+              >
+                Learn More
+              </Scroll>
+            </li>
+          </ul>
+          {/* {button && <Button buttonStyle='btn--outline'>Learn More</Button>} */}
         </div>
-        </header>
-    )
+      </nav>
+    </>
+  );
 }
 
 export default Navbar;
