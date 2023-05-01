@@ -4,13 +4,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'
 import Dorm from './pages/Dorm';
 import Navbar from './components/Navbar/Navbar';
+import Navbar2 from './components/Navbar/Navbar2'
 import NotFound from './pages/NotFound';
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar />
+        <Navbar2 />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='dorms/:name' element={<Dorm />}/>
