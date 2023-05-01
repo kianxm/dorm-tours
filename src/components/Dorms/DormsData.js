@@ -92,7 +92,19 @@ const DormData = [
             ],
         amenities: 'Air conditioning, laundry facilities, study lounge',
         embedLink: '',
-        picture: casa
+        picture: casa,
+        testimonials: [{
+            studentName: 'Kian Malakooti',
+            quote: "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian
+        },
+        {
+            studentName: 'Matthew Gates',
+            quote: "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian2
+        }]
     },
     {
         name: 'dunne-hall',
@@ -115,7 +127,19 @@ const DormData = [
             ],
         amenities: 'Air conditioning, laundry facilities, study lounge',
         embedLink: '',
-        picture: dunne
+        picture: dunne,
+        testimonials: [{
+            studentName: 'Kian Malakooti',
+            quote: "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian
+        },
+        {
+            studentName: 'Matthew Gates',
+            quote: "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian2
+        }]
     },
     {
         name: 'finn-hall',
@@ -141,7 +165,19 @@ const DormData = [
             ],
         amenities: 'Air conditioning, laundry facilities, study lounge',
         embedLink: 'https://my.treedis.com/tour/finn-lobby',
-        picture: finn
+        picture: finn,
+        testimonials: [{
+            studentName: 'Kian Malakooti',
+            quote: "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian
+        },
+        {
+            studentName: 'Matthew Gates',
+            quote: "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian2
+        }]
     },
     {
         name: 'graham-hall',
@@ -167,7 +203,19 @@ const DormData = [
             ],
         amenities: 'Air conditioning, laundry facilities, study lounge',
         embedLink: 'https://my.treedis.com/tour/graham-dorm-room-1',
-        picture: graham
+        picture: graham,
+        testimonials: [{
+            studentName: 'Kian Malakooti',
+            quote: "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian
+        },
+        {
+            studentName: 'Matthew Gates',
+            quote: "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian2
+        }]
     },
     {
         name: 'mcwalsh-hall',
@@ -193,7 +241,19 @@ const DormData = [
             ],
         amenities: 'Air conditioning, laundry facilities, study lounge',
         embedLink: '',
-        picture: mcwalsh
+        picture: mcwalsh,
+        testimonials: [{
+            studentName: 'Kian Malakooti',
+            quote: "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian
+        },
+        {
+            studentName: 'Matthew Gates',
+            quote: "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian2
+        }]
     },
     {
         name: 'nobili-hall',
@@ -218,7 +278,19 @@ const DormData = [
             ],
         amenities: 'Air conditioning, laundry facilities, study lounge',
         embedLink: '',
-        picture: nobili
+        picture: nobili,
+        testimonials: [{
+            studentName: 'Kian Malakooti',
+            quote: "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian
+        },
+        {
+            studentName: 'Matthew Gates',
+            quote: "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian2
+        }]
     },
     {
         name: 'sanfillipo-hall',
@@ -243,7 +315,19 @@ const DormData = [
             ],
         amenities: 'Air conditioning, laundry facilities, study lounge',
         embedLink: '',
-        picture: flip
+        picture: flip,
+        testimonials: [{
+            studentName: 'Kian Malakooti',
+            quote: "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian
+        },
+        {
+            studentName: 'Matthew Gates',
+            quote: "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian2
+        }]
     },
     {
         name: 'sobrato-hall',
@@ -269,7 +353,19 @@ const DormData = [
             ],
         amenities: 'Air conditioning, laundry facilities, study lounge',
         embedLink: '',
-        picture: sobrato
+        picture: sobrato,
+        testimonials: [{
+            studentName: 'Kian Malakooti',
+            quote: "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian
+        },
+        {
+            studentName: 'Matthew Gates',
+            quote: "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian2
+        }]
     },
     {
         name: 'swig-hall',
@@ -294,7 +390,19 @@ const DormData = [
             ],
         amenities: 'Air conditioning, laundry facilities, study lounge',
         embedLink: 'https://my.treedis.com/tour/swig-dorm-room',
-        picture: swig
+        picture: swig,
+        testimonials: [{
+            studentName: 'Kian Malakooti',
+            quote: "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian
+        },
+        {
+            studentName: 'Matthew Gates',
+            quote: "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian2
+        }]
     },
     {
         name: 'villas',
@@ -318,7 +426,19 @@ const DormData = [
             ],
         amenities: 'Air conditioning, laundry facilities, study lounge',
         embedLink: '',
-        picture: villas
+        picture: villas,
+        testimonials: [{
+            studentName: 'Kian Malakooti',
+            quote: "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian
+        },
+        {
+            studentName: 'Matthew Gates',
+            quote: "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian2
+        }]
     },
 ];
 

@@ -132,9 +132,9 @@
     margin-top: 5rem;
     padding: 3rem 2rem;
     border-radius: 0 3rem 0 3rem;
-    background: rgba(179, 7, 56, 0.532);
+    background: rgba(179, 7, 56, 0.753);
     border: 2px solid black;
-    transition: all 0.3s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 .testimonial__avatar img {
@@ -142,16 +142,16 @@
     height: 4rem;
     overflow: hidden;
     position: absolute;
-    border-radius: 1.5rem;
+    border-radius: 2rem;
     border: 2px solid transparent;
     top: -2rem;
     left: calc(50% - 2rem);
     box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4);
-    transition: all 0.3s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 .testimonial:hover {
-    background: rgba(179, 7, 56, 0.753);;
+    background: rgba(179, 7, 56, 0.532);
     border-color: var(--second-text-color);
 }
 
