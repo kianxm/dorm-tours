@@ -15,7 +15,7 @@ function Navbar() {
                     </div>
                     <ul class="nav-list">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
                         <a href="#">Dorms <i class="fas fa-caret-down"></i></a>

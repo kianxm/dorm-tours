@@ -24,6 +24,17 @@ import villas from '../../images/additional_housing_images/villas.jpg'
 
 import kian from '../../images/avatars/kian.png'
 import kian2 from '../../images/avatars/kian2.png'
+import Liying from '../../images/avatars/Liying.jpeg'
+import max from '../../images/avatars/max.png'
+import katie from '../../images/avatars/katie.jpeg'
+import collin from '../../images/avatars/collin.png'
+import calley from '../../images/avatars/calley.png'
+import john from '../../images/avatars/john.png'
+import Inez from '../../images/avatars/Inez.jpeg'
+import kinsey from '../../images/avatars/Kinsey.jpeg'
+import nicole from '../../images/avatars/nicole.jpeg'
+import jesus from '../../images/avatars/jesus.png'
+import ethan from '../../images/avatars/ethan.png'
 
 const DormData = [
     {
@@ -51,22 +62,22 @@ const DormData = [
         embedLink: 'https://my.treedis.com/tour/campisi-lobby',
         picture: campisi,
         testimonials: [{
-            studentName: 'Kian Malakooti',
-            quote: "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
-            grade: 'Senior',
-            avatar: kian
+            studentName: 'Liying Liang',
+            quote: "I like that it’s quiet so you can study in the dorm",
+            grade: 'Freshman',
+            avatar: Liying
         },
         {
-            studentName: 'Matthew Gates',
-            quote: "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
-            grade: 'Senior',
-            avatar: kian2
+            studentName: 'Katie Mahoney',
+            quote: "Campisi is kinda quiet, but it’s a good area to be in and the lounge is super nice and if you find your people it’s pretty fun",
+            grade: 'Freshman',
+            avatar: katie
         },
         {
-            studentName: 'Eva Stenberg',
-            quote: "(3) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
-            grade: 'Senior',
-            avatar: kian
+            studentName: 'Collin Paiz',
+            quote: "Even though it's quiet, if you want to find something to do and hang out with people you can",
+            grade: 'Sophomore',
+            avatar: collin
         }]
     },
     {
@@ -167,16 +178,16 @@ const DormData = [
         embedLink: 'https://my.treedis.com/tour/finn-lobby',
         picture: finn,
         testimonials: [{
-            studentName: 'Kian Malakooti',
-            quote: "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
-            grade: 'Senior',
-            avatar: kian
+            studentName: 'Calley Lwin',
+            quote: "Very nice living conditions considering it's a dorm",
+            grade: 'Freshman',
+            avatar: calley
         },
         {
-            studentName: 'Matthew Gates',
-            quote: "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
-            grade: 'Senior',
-            avatar: kian2
+            studentName: 'John Oran',
+            quote: "It's quiet and not as social as other dorms which is perfect for someone like me!",
+            grade: 'Freshman',
+            avatar: john
         }]
     },
     {
@@ -205,16 +216,22 @@ const DormData = [
         embedLink: 'https://my.treedis.com/tour/graham-dorm-room-1',
         picture: graham,
         testimonials: [{
-            studentName: 'Kian Malakooti',
-            quote: "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
-            grade: 'Senior',
-            avatar: kian
+            studentName: 'Inez Low',
+            quote: "I liked how it was quiet but if you wanted to socialize we could go somewhere else. also not having communal bathrooms was great",
+            grade: 'Freshman',
+            avatar: Inez
         },
         {
-            studentName: 'Matthew Gates',
-            quote: "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
-            grade: 'Senior',
-            avatar: kian2
+            studentName: 'Kinsey',
+            quote: "Having a dorm with non communal bathrooms is amazing and it’s the perfect balance of quiet yet still social",
+            grade: 'Sophomore',
+            avatar: kinsey
+        },
+        {
+            studentName: 'Jesus',
+            quote: "It has a great location, being in the middle of the gym, the dining hall, and the library!",
+            grade: 'Freshman',
+            avatar: jesus
         }]
     },
     {
@@ -388,20 +405,26 @@ const DormData = [
                 'Vanity: 59"W x 21"D x 34"H',
                 'Mattress Dimensions: 80"L x 38"W x 7.5"H',
             ],
-        amenities: 'Air conditioning, laundry facilities, study lounge',
+        amenities: 'Air conditioning, laundry facilities, study lounge, sky lounge, dance room, art room',
         embedLink: 'https://my.treedis.com/tour/swig-dorm-room',
         picture: swig,
         testimonials: [{
-            studentName: 'Kian Malakooti',
-            quote: "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
-            grade: 'Senior',
-            avatar: kian
+            studentName: 'Max Schiff',
+            quote: "Everyone was very social, the view from my room was very nice",
+            grade: 'Junior',
+            avatar: max
         },
         {
-            studentName: 'Matthew Gates',
-            quote: "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
-            grade: 'Senior',
-            avatar: kian2
+            studentName: 'Nicole Robison',
+            quote: "It was social--great for freshman year, but ONLY freshman year",
+            grade: 'Freshman',
+            avatar: nicole
+        },
+        {
+            studentName: 'Ethan Lagasse',
+            quote: "There were so many people so close by! Made it easy to meet and make friends",
+            grade: 'Freshman',
+            avatar: ethan
         }]
     },
     {
