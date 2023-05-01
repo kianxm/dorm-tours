@@ -126,19 +126,19 @@ const Cards = () => {
                     <CardItem 
                         src={bellarmine}
                         text='Bellarmine Hall'
-                        label='Upperclassmen'
+                        label='Graduate'
                         path='https://www.scu.edu/living/residential-living-options/graduate/graduate--law-living-options/bellarmine/'
                     />
                     <CardItem 
                         src={parkavenue}
                         text='Park Avenue Apartments'
-                        label='Upperclassmen'
+                        label='Graduate'
                         path='https://www.scu.edu/living/residential-living-options/graduate/graduate--law-living-options/park-avenue-apartments/'
                     />
                     <CardItem 
                         src={stclare}
                         text='St. Clare Hall'
-                        label='Upperclassmen'
+                        label='Graduate'
                         path='https://www.scu.edu/living/residential-living-options/graduate/graduate--law-living-options/st-clare-hall/'
                     />
                 </div>

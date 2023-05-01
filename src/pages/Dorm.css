@@ -7,7 +7,6 @@
     padding: 0;
     margin: 0;
     color: var(--text-color);
-    /* background-color: lightblue; */
 }
 
 .dorm__container {
@@ -97,26 +96,97 @@
 
 .dorm__features__container {
     display: flex;
-    justify-content: space-evenly;
-    text-align: center;
     align-items: center;
-    background-color: lightblue;
+    text-align: left;
+    background-color: #dfdfdf;
     border-radius: 10px;
     padding: 20px;
 }
 
 .dorm__features__container svg {
     /* margin-left: 5px; */
-    width: 25px;
-    height: 25px;
-    padding-top: 5px;
+    width: 30px;
+    height: 30px;
+    padding-top: 10px;
+    color: rgb(0, 127, 169);
 }
 
 .dorm__features__row1 {
     margin-right: 3vw;
 }
 
-.dorm__testimonials {
-    margin-top: 3vh;
+.testimonials {
+    text-align: center;
+    width: 50rem;
+    margin-inline: auto;
 }
 
+.testimonials__head {
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.testimonial {
+    position: relative;
+    text-align: left;
+    margin-top: 5rem;
+    padding: 3rem 2rem;
+    border-radius: 0 3rem 0 3rem;
+    background: rgba(179, 7, 56, 0.532);
+    border: 2px solid black;
+    transition: all 0.3s ease-out;
+}
+
+.testimonial__avatar img {
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 1.5rem;
+    border: 2px solid transparent;
+    top: -2rem;
+    left: calc(50% - 2rem);
+    box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4);
+    transition: all 0.3s ease-out;
+}
+
+.testimonial:hover {
+    background: rgba(179, 7, 56, 0.753);;
+    border-color: var(--second-text-color);
+}
+
+.testimonial:hover .testimonial__avatar img {
+    border-radius: 50%;
+    border-color: var(--text-color);
+}
+
+.testimonial__quote {
+    font-style: italic;
+    margin: 1rem 0 2rem;
+}
+
+.testimonial small.testimonial__title {
+    margin-top: 0.3rem;
+}
+
+.testimonials__btn-container {
+    width: fit-content;
+    margin: 2.5rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonials__btn {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.testimonials__btn svg {
+    fill: var(--second-text-color);
+    font-size: 1.8rem;
+    width: 3rem;
+    height: 3rem;
+}

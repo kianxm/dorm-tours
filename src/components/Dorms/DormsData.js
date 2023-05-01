@@ -22,6 +22,9 @@ import sobrato from '../../images/dorm_images/pics/sobrato.jpg'
 import swig from '../../images/dorm_images/pics/swig.jpg'
 import villas from '../../images/additional_housing_images/villas.jpg'
 
+import kian from '../../images/avatars/kian.png'
+import kian2 from '../../images/avatars/kian2.png'
+
 const DormData = [
     {
         name: 'campisi-hall',
@@ -46,7 +49,25 @@ const DormData = [
             ],
         amenities: 'Air conditioning, laundry facilities, study lounge',
         embedLink: 'https://my.treedis.com/tour/campisi-lobby',
-        picture: campisi
+        picture: campisi,
+        testimonials: [{
+            studentName: 'Kian Malakooti',
+            quote: "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian
+        },
+        {
+            studentName: 'Matthew Gates',
+            quote: "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian2
+        },
+        {
+            studentName: 'Eva Stenberg',
+            quote: "(3) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+            grade: 'Senior',
+            avatar: kian
+        }]
     },
     {
         name: 'casa-hall',

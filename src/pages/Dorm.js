@@ -2,15 +2,37 @@ import React, { Component } from 'react'
 import './Dorm.css'
 import { useParams } from 'react-router-dom';
 import { DormData } from '../components/Dorms/DormsData';
+import { useState } from 'react';
 
-import { FaBed, FaSink} from 'react-icons/fa'
+import { FaBed, FaSink } from 'react-icons/fa'
 import { BsFillPeopleFill, BsStars } from 'react-icons/bs'
 import { SlSizeFullscreen } from 'react-icons/sl'
-import { TbAirConditioning } from 'react-icons/tb'
+import { TbAirConditioning, TbParking } from 'react-icons/tb'
+import { AiOutlineWifi, AiFillLeftCircle, AiFillRightCircle } from 'react-icons/ai'
+import { MdOutlineLocalLaundryService, MdSoupKitchen } from 'react-icons/md'
+import { ImBooks, ImQuotesLeft } from 'react-icons/im'
+
 
 const Dorm = (props) => {
   const { name } = useParams();
   const dorm = DormData.find(dorm => dorm.name === name);
+
+  const [index, setIndex] = useState(0);
+  const {studentName, quote, grade, avatar} = dorm.testimonials[index];
+
+  const prevTestimonialHandler = () => {
+    setIndex(prev => prev - 1);
+    if(index <= 0) {
+      setIndex(dorm.testimonials.length-1);
+    }
+  }
+
+  const nextTestimonialHandler = () => {
+    setIndex(prev => prev + 1);
+    if(index >= dorm.testimonials.length - 1) {
+      setIndex(0);
+    }
+  }
 
   return (
     <div className='dorm'>
@@ -73,24 +95,41 @@ const Dorm = (props) => {
           <h2 className='header__text'>Features <BsStars/></h2>
           <div className='dorm__features__container'>
               <div className='dorm__features__row1'>
-                <div><TbAirConditioning/> Air-conditioned cooling & heating</div>
-                <div>test</div>
-                <div>test</div>
+                <div><TbAirConditioning/> AC cooling & heating</div>
+                <div><AiOutlineWifi/> High-speed internet</div>
+                <div><MdOutlineLocalLaundryService/> Laundry room inside</div>
               </div>
               <div className='dorm__features__row2'>
-                <div>test</div>
-                <div>test</div>
-                <div>test</div>
+                <div><TbParking/> Roadside & lot parking</div>
+                <div><MdSoupKitchen/> Shared kitchen</div>
+                <div><ImBooks/> Study rooms & areas</div>
               </div>
           </div>
         </div>
-
-        <h2 className='dorm__testimonials'>
-          Testimonials
-        </h2>
-
       </div>
+
+    <section className='testimonials'>
+      <div className='container testimonials__container'>
+        <h2 className='testimonials__head'>Testimonials <ImQuotesLeft/></h2>
+        <div className='testimonial'>
+          <div className='testimonial__avatar'>
+            <img src={avatar} alt={studentName}/>
+          </div>
+          <p className='testimonial__quote'>{`"${quote}`}</p>
+          <h5>{studentName}</h5>
+          <small className='testimonial__title'>{grade}</small>
+        </div>
+        <div className='testimonials__btn-container'>
+          <button className='testimonials__btn' onClick={prevTestimonialHandler}><AiFillLeftCircle/></button>
+          <button className='testimonials__btn' onClick={nextTestimonialHandler}><AiFillRightCircle/></button>
+        </div>
+      </div>
+      
+    </section>            
+      
     </div>
+
+    
   )
 }
 
