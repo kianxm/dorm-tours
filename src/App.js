@@ -1,22 +1,20 @@
 import './App.css';
-import HeroSection from './components/HeroSection/HeroSection';
-import Navbar from './components/Navbar/Navbar';
-import Navbar2 from './components/Navbar/Navbar2';
-import Cards from './components/Cards/Cards';
-import Home from './pages/Home'
-import Matterport from './components/Matterport/Matterport';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Home from './pages/Home'
+import Dorm from './pages/Dorm';
+import Navbar from './components/Navbar/Navbar';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar/>
-        <HeroSection />
-        <Cards />
-        <Matterport />
+        <Navbar />
         <Routes>
-          {/* <Route path='/' exact component={Home} /> */}
+          <Route path='/' element={<Home />} />
+          <Route path='dorms/:name' element={<Dorm />}/>
+          <Route path='*' element={<NotFound />}/>
         </Routes>
       </Router>
     </>

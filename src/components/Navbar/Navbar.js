@@ -10,10 +10,10 @@ function Navbar() {
                    <i class="fas fa-bars"></i>
                    <i class="fas fa-times"></i>
                 </div>
-                <a href="index.html" class="logo">SCU Dorm Tours</a>
+                <a href="/" class="logo">SCU Dorm Tours</a>
                 <ul class="nav-list">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
                         <a href="#">Dorms <i class="fas fa-caret-down"></i></a>

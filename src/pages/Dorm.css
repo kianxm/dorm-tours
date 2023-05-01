@@ -1,0 +1,116 @@
+:root {
+    --text-color: #3B4144;
+    --second-text-color: rgb(179, 7, 56)
+}
+
+.dorm {
+    padding: 0;
+    margin: 0;
+    color: var(--text-color);
+    /* background-color: lightblue; */
+}
+
+.dorm__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.dorm__tour {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+}
+
+.dorm__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.dorm__specifics {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.dorm__specifics__row {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.dorm__specifics__row svg {
+    margin-right: 8px;
+    color: var(--second-text-color);
+}
+
+.dorm__title {
+    padding-top: 2vh;
+}
+
+.dorm__dimensions__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.dorm__dimensions {
+    display: flex;
+    flex-direction: column;
+}
+
+.dorm__layout img {
+    height: 300px;
+}
+
+.dimensions__text {
+    font-weight: 700;
+}
+
+.header__text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.header__text svg {
+    color: var(--second-text-color);
+    margin-left: 5px;
+    padding-top: 5px;
+    width: 20px;
+}
+
+.dorm__features {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.dorm__features__container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.dorm__features__container svg {
+    /* margin-left: 5px; */
+    width: 25px;
+    height: 25px;
+    padding-top: 5px;
+}
+
+.dorm__features__row1 {
+    margin-right: 3vw;
+}
+
+.dorm__testimonials {
+    margin-top: 3vh;
+}
+

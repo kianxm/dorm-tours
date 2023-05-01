@@ -3,16 +3,6 @@ import { CardItem } from './CardItem'
 import './Cards.css'
 
 // On-campus Dorms
-import campisiLayout from '../../images/dorm_images/layouts/campisi_layout.jpg'
-import casaLayout from '../../images/dorm_images/layouts/casa_layout.jpg'
-import dunneLayout from '../../images/dorm_images/layouts/dunne_layout.jpg'
-import finnLayout from '../../images/dorm_images/layouts/finn_layout.png'
-import flipLayout from '../../images/dorm_images/layouts/flip_layout.jpg'
-import grahamLayout from '../../images/dorm_images/layouts/graham_layout.png'
-import mcwalshLayout from '../../images/dorm_images/layouts/mcwalsh_layout.jpg'
-import sobratoLayout from '../../images/dorm_images/layouts/sobrato_layout.jpg'
-import swigLayout from '../../images/dorm_images/layouts/swig_layout.jpg'
-
 import campisi from '../../images/dorm_images/pics/campisi.jpg'
 import casa from '../../images/dorm_images/pics/casa.jpg'
 import dunne from '../../images/dorm_images/pics/dunne.jpg'
@@ -45,19 +35,19 @@ const Cards = () => {
                         src={campisi}
                         text='Campisi Hall'
                         label='Quiet'
-                        path='/home'
+                        path= '/dorms/campisi-hall'
                     />
                     <CardItem 
                         src={casa}
                         text='Casa-Italiana Hall'
                         label='Comfortable'
-                        path='/home'
+                        path='/'
                     />
                     <CardItem 
                         src={dunne}
                         text='Dunne Hall'
                         label='Lively'
-                        path='/home'
+                        path='/'
                     />
                 </ul>
                 <ul className='cards__items'>
@@ -65,19 +55,19 @@ const Cards = () => {
                         src={finn}
                         text='Finn Hall'
                         label='Spacious'
-                        path='/home'
+                        path='/'
                     />
                     <CardItem 
                         src={flip}
                         text='Sanfillipo Hall'
                         label='Relaxed'
-                        path='/home'
+                        path='/'
                     />
                     <CardItem 
                         src={graham}
                         text='Graham Hall'
                         label='Well-rounded'
-                        path='/home'
+                        path='/'
                     />
                 </ul>
                 <ul className='cards__items'>
@@ -85,19 +75,19 @@ const Cards = () => {
                         src={mcwalsh}
                         text='McLaughlin-Walsh Hall'
                         label='Cozy'
-                        path='/home'
+                        path='/'
                     />
                     <CardItem 
                         src={sobrato}
                         text='Sobrato Hall'
                         label='Studious'
-                        path='/home'
+                        path='/'
                     />
                     <CardItem 
                         src={swig}
                         text='Swig Hall'
                         label='Active'
-                        path='/home'
+                        path='/'
                     />
                 </ul>
                 

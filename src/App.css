@@ -7,14 +7,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.home, .dorms, .aboutus, .learnmore {
-    display: flex;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-}
-
 ::-webkit-scrollbar {
     display: none;
 }
