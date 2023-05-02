@@ -6,7 +6,7 @@ import eva from "../../images/avatars/eva.png";
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div className="about-container" id="about-page">
       <h1 className="about-header">About Us</h1>
       <p className="about-description">
         We are three senior computer engineering students at Santa Clara
@@ -36,9 +36,8 @@ const About = () => {
         <h3 className="acknowledgements-header">Acknowledgements</h3>
         <p>We would like to thank the following people for their help and support in creating this project:</p>
         <ul>
-          <li>Professor John Smith for his guidance and feedback throughout the project.</li>
-          <li>The staff at Santa Clara University for providing us with the resources and support we needed.</li>
-          <li>Our friends and families for their encouragement and support.</li>
+            <li>Our faculty advisor Dr. Kai Lukoff for helping us bring this project to life using his knowledge of human centered design
+          methods in research and design to guide us through the complexities and milestones throughout the quarter, our partnering HCI teams, the SAR Team and Storytelling team whose own participation contributed to our project, Luke Ponssen, and most importantly, our families and friends that have supported us in our four years at Santa Clara University and without which we would not be where we are today. Thank you!</li>
         </ul>
       </div>
     </div>

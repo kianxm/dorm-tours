@@ -1,11 +1,13 @@
-body {
+
+
+#about-page {
   background-image: url('../../images/dorm_images/pics/background.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-body::before {
+#about-page::before {
   content: "";
   position: fixed;
   top: 0;
@@ -14,27 +16,27 @@ body::before {
   bottom: 0;
 }
 
-
-
 .about-container {
   margin: 2rem auto;
-  max-width: 800px;
+  max-width: 2000px;
   text-align: center;
   padding-top: 60px;
   border-radius: 10px;
 }
 
-
-
 .about-header {
   font-size: 2.5rem;
   font-weight: bold;
+  margin: 2rem auto;
+  max-width: 800px;
 }
 
 .about-description {
   margin-top: 1rem;
   font-size: 1.2rem;
   line-height: 1.5;
+  margin: 2rem auto;
+  max-width: 800px;
 }
 
 .about-subheader {
@@ -50,7 +52,6 @@ body::before {
   overflow-x: auto;
   margin-top: 2rem;
 }
-
 
 .team-member {
   margin: 1.5rem;
@@ -80,4 +81,6 @@ body::before {
   margin-top: 2rem;
   font-size: 1rem;
   line-height: 1.5;
+  margin: 2rem auto;
+  max-width: 1200px;
 }
