@@ -1,7 +1,6 @@
 import React from "react";
 import { CardItem } from "./CardItem";
 import "./Cards.css";
-// import { Fade } from "react-awesome-reveal";
 import { Fade } from "react-reveal";
 
 // On-campus Dorms

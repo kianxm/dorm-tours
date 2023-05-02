@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Button } from "../Button/Button";
+// import { Button } from "../Button/Button";
 import { Link } from "react-router-dom";
 import { Link as Scroll } from "react-scroll";
+import sculogo from "../../images/sculogo.png";
 import "./Navbar.css";
 
 function Navbar() {
@@ -31,14 +32,17 @@ function Navbar() {
         <div className="navbar-container">
           <Scroll
             to="hero"
-            className="navbar-logo"
             spy={true}
             smooth={true}
             offset={0}
             duration={1000}
             onClick={closeMobileMenu}
           >
-            SCU Virtual Dorm Tours
+            <img
+              className="navbar__logo"
+              src={sculogo}
+              alt="SCU Virtual Dorm Tours"
+            />
           </Scroll>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -71,8 +75,7 @@ function Navbar() {
                 About Us
               </Link>
             </li>
-
-            <li>
+            <li className="nav-item">
               <Scroll
                 to="matterport"
                 className="nav-links"

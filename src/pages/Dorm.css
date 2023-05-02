@@ -1,196 +1,201 @@
 :root {
-    --text-color: #3B4144;
-    --second-text-color: rgb(179, 7, 56)
+  --text-color: #3b4144;
+  --second-text-color: rgb(179, 7, 56);
 }
 
 .dorm {
-    padding: 0;
-    margin: 0;
-    color: var(--text-color);
+  padding: 0;
+  margin: 0;
+  color: var(--text-color);
 }
 
 .dorm__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
 }
 
 .dorm__tour {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    width: 1000px;
-    height: 600px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  height: 600px;
 }
 
 .dorm__picture {
-    width: 1000px;
-    height: 600px;
+  width: 1000px;
+  height: 600px;
 }
 
 .dorm__details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .dorm__specifics {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
 }
 
 .dorm__specifics__row {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
 }
 
 .dorm__specifics__row svg {
-    margin-right: 8px;
-    color: var(--second-text-color);
+  margin-right: 8px;
+  color: var(--second-text-color);
 }
 
 .dorm__title {
-    padding-top: 2vh;
+  padding-top: 2vh;
 }
 
 .dorm__dimensions__container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .dorm__dimensions {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .dorm__layout img {
-    height: 300px;
-    margin-left: 40px;
+  height: 300px;
+  margin-left: 40px;
 }
 
 .dimensions__text {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .header__text {
-    margin-top: 30px;
-    margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .header__text svg {
-    color: var(--second-text-color);
-    margin-left: 5px;
-    padding-top: 5px;
-    width: 20px;
+  color: var(--second-text-color);
+  margin-left: 5px;
+  padding-top: 5px;
+  width: 20px;
 }
 
 .dorm__features {
-    margin-top: 3vh;
-    text-align: center;
+  margin-top: 3vh;
+  text-align: center;
 }
 
 .dorm__features__container {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    background-color: #dfdfdf;
-    border-radius: 10px;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background-color: #dfdfdf;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .dorm__features__container svg {
-    /* margin-left: 5px; */
-    width: 30px;
-    height: 30px;
-    padding-top: 10px;
-    color: rgb(0, 127, 169);
+  /* margin-left: 5px; */
+  width: 30px;
+  height: 30px;
+  padding-top: 10px;
+  color: rgb(0, 127, 169);
 }
 
 .dorm__features__row1 {
-    margin-right: 3vw;
+  margin-right: 3vw;
 }
 
 .testimonials {
-    text-align: center;
-    width: 50rem;
-    margin-inline: auto;
+  text-align: center;
+  width: 50rem;
+  margin-inline: auto;
 }
 
 .testimonials__head {
-    justify-content: center;
-    margin-top: 3rem;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
-.testimonials__head svg{
-    color: var(--second-text-color);
+.testimonials__head svg {
+  color: var(--second-text-color);
 }
 
 .testimonial {
-    position: relative;
-    text-align: left;
-    margin-top: 3rem;
-    padding: 3rem 2rem;
-    border-radius: 0 3rem 0 3rem;
-    background: rgba(179, 7, 56, 0.753);
-    border: 2px solid black;
-    transition: all 0.5s ease-out;
+  position: relative;
+  text-align: left;
+  margin-top: 3rem;
+  padding: 3rem 2rem;
+  border-radius: 0 3rem 0 3rem;
+  background: rgba(179, 7, 56, 0.753);
+  border: 2px solid black;
+  transition: all 0.5s ease-out;
 }
 
 .testimonial__avatar img {
-    width: 5rem;
-    height: 5rem;
-    overflow: hidden;
-    position: absolute;
-    border-radius: 2.5rem;
-    border: 2px solid transparent;
-    top: -2rem;
-    left: calc(50% - 2rem);
-    box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4);
-    transition: all 0.5s ease-out;
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 2.5rem;
+  border: 2px solid transparent;
+  top: -2rem;
+  left: calc(50% - 2rem);
+  box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4);
+  transition: all 0.5s ease-out;
 }
 
 .testimonial:hover {
-    background: rgba(179, 7, 56, 0.532);
-    border-color: var(--second-text-color);
+  background: rgba(179, 7, 56, 0.532);
+  border-color: var(--second-text-color);
 }
 
 .testimonial:hover .testimonial__avatar img {
-    border-radius: 50%;
-    border-color: var(--text-color);
+  border-radius: 50%;
+  border-color: var(--text-color);
 }
 
 .testimonial__quote {
-    font-style: italic;
-    margin: 1rem 0 2rem;
+  font-style: italic;
+  margin: 1rem 0 2rem;
 }
 
 .testimonial small.testimonial__title {
-    margin-top: 0.3rem;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+
+.testimonal__student__name {
+  font-size: 1.2rem;
 }
 
 .testimonials__btn-container {
-    width: fit-content;
-    margin: 2.5rem auto 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  width: fit-content;
+  margin: 2.5rem auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .testimonials__btn {
-    background: transparent;
-    cursor: pointer;
-    border: none;
+  background: transparent;
+  cursor: pointer;
+  border: none;
 }
 
 .testimonials__btn svg {
-    fill: var(--second-text-color);
-    font-size: 1.8rem;
-    width: 3rem;
-    height: 3rem;
+  fill: var(--second-text-color);
+  font-size: 1.8rem;
+  width: 3rem;
+  height: 3rem;
 }

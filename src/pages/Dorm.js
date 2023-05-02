@@ -14,7 +14,7 @@ import {
   AiFillRightCircle,
 } from "react-icons/ai";
 import { MdOutlineLocalLaundryService, MdSoupKitchen } from "react-icons/md";
-import { ImBooks, ImQuotesLeft } from "react-icons/im";
+import { ImBooks, ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 
 const Dorm = (props) => {
   const { name } = useParams();
@@ -124,14 +124,14 @@ const Dorm = (props) => {
       <section className="testimonials">
         <div className="container testimonials__container">
           <h2 className="testimonials__head">
-            <ImQuotesLeft /> Testimonials
+            <ImQuotesLeft /> Testimonials <ImQuotesRight />
           </h2>
           <div className="testimonial">
             <div className="testimonial__avatar">
               <img src={avatar} alt={studentName} />
             </div>
-            <p className="testimonial__quote">{`"${quote}`}</p>
-            <h5>{studentName}</h5>
+            <p className="testimonial__quote">{`"${quote}"`}</p>
+            <h5 className="testimonal__student__name">{studentName}</h5>
             <small className="testimonial__title">{grade}</small>
           </div>
           <div className="testimonials__btn-container">

@@ -10,7 +10,9 @@ function HeroSection() {
     <div className="hero-container" id="hero">
       {/* <video src={heroVideo} autoPlay loop muted /> */}
       <img className="hero-image" src={swig} alt="Swig" />
-      <h1>Discover Your Dream Dorm Today</h1>
+      <h1>
+        Discover Your <span className="span-text">Dream</span> Dorm Today
+      </h1>
       <p>
         Explore our top-rated dorms and find the perfect place to call home
         during your college years.
@@ -22,7 +24,7 @@ function HeroSection() {
       <div className="hero-btns">
         <Button
           className="btns"
-          buttonStyle="btn--outline"
+          buttonStyle="btn--primary"
           buttonSize="btn--large"
         >
           GET STARTED

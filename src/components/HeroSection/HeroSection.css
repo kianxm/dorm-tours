@@ -29,7 +29,33 @@
 
 .hero-container > h1 {
   color: #fff;
+  text-shadow: 2px 2px 40px #000000;
   font-size: 60px;
+  letter-spacing: 1px;
+}
+
+.span-text {
+  text-shadow: none;
+  animation: move 4s linear infinite;
+  background-image: linear-gradient(
+    to right,
+    rgb(200, 24, 74),
+    rgb(230, 23, 82),
+    rgb(255, 61, 116),
+    rgb(230, 23, 82),
+    rgb(200, 24, 74)
+  );
+  font-size: 62px;
+  font-weight: 900;
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes move {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .hero-container > p {
@@ -37,6 +63,7 @@
   color: #fff;
   font-size: 20px;
   text-align: center;
+  text-shadow: 2px 2px 8px #000000;
 }
 
 .hero-btns {
@@ -45,10 +72,7 @@
 
 .hero-btns .btn {
   margin: 6px;
-}
-
-.fa-play-circle {
-  margin-left: 4px;
+  box-shadow: 0 0 40px #484848;
 }
 
 @media screen and (max-width: 960px) {
