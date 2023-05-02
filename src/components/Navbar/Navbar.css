@@ -82,6 +82,10 @@ nav {
     font-family: 'Kanit', sans-serif;
 }
 
+.logo-top {
+    color: var(--main-color);
+}
+
 .nav-list {
     display: flex;
     align-items: center;
@@ -116,7 +120,7 @@ nav {
 
 .nav-list a:hover {
     color: var(--main-color);
-}
+  }  
 
 .sub-menu {
     width: 13rem;
@@ -159,17 +163,27 @@ nav {
 }
 
 
-.nav-list li:hover>.sub-menu {
+.nav-list li:hover > .sub-menu {
     top: 8rem;
     opacity: 1;
     visibility: visible;
-}
-
-.sub-menu li:hover>.sub-menu {
+  }
+  
+  .sub-menu li:hover > .sub-menu {
     top: 0;
     left: 100%;
-}
-
+  }
+  
+  .sub-menu li:hover {
+    background-color: var(--main-color);
+    opacity: .5;
+  }
+  
+  .sub-menu li:hover > a {
+    color: black;
+  }
+  
+  
 li.move-right {
     margin: auto 0 auto auto;
     line-height: initial;

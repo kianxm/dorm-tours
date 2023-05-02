@@ -1,5 +1,6 @@
 import './Navbar.css';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
@@ -11,43 +12,49 @@ function Navbar() {
                         <i className="fas fa-times"></i>
                     </div>
                     <div className="logo">
-                        <div className="logo-top">SCU Virtual Housing Tours</div>
+                        <Link to="/" className="logo-top">SCU Virtual Housing Tours</Link>
                     </div>
                     <ul class="nav-list">
                         <li>
-                            <a href="/">Home</a>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <a href="#">Dorms <i class="fas fa-caret-down"></i></a>
-                            <ul class="sub-menu">
+                            <Link to="#">Dorms <i class="fas fa-caret-down"></i></Link>
+                            <ul className="sub-menu">
                                 <li>
-                                    <a href="/dorms/swig-hall">Swig Hall </a>
+                                    <Link to="/dorms/campisi-hall">Campisi Hall </Link>
                                 </li>
                                 <li>
-                                   <a href="/dorms/graham-hall">Graham Hall </a>
+                                    <Link to="#">Casa Italiana Hall</Link>
                                 </li>
                                 <li>
-                                    <a href="/dorms/campisi-hall">Campisi Hall </a>
+                                    <Link to="#">Dunne Hall</Link>
                                 </li>
                                 <li>
-                                    <a href="/dorms/finn-hall">Finn Hall </a>
+                                    <Link to="/dorms/finn-hall">Finn Hall </Link>
                                 </li>
                                 <li>
-                                    <a href="#">Dunne Hall</a>
+                                   <Link to="/dorms/graham-hall">Graham Hall </Link>
                                 </li>
                                 <li>
-                                    <a href="#">San Fillipo Hall</a>
+                                    <Link to="#">McWalsh Hall</Link>
                                 </li>
                                 <li>
-                                    <a href="#">Casa Italiana Hall</a>
+                                    <Link to="#">San Fillipo Hall</Link>
+                                </li>
+                                <li>
+                                    <Link to="#">Sobrato Hall</Link>
+                                </li>
+                                <li>
+                                    <Link to="/dorms/swig-hall">Swig Hall </Link>
                                 </li>
                             </ul>
                         </li>
                     <li>
-                        <a href="#">About Us</a>
+                        <Link to="/About">About Us</Link>
                     </li>
                     <li>
-                        <a href="#">Learn More</a>
+                        <Link to="#">Learn More</Link>
                     </li>
                 </ul>
             </nav>
@@ -57,5 +64,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-

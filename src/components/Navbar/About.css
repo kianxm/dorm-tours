@@ -1,0 +1,83 @@
+body {
+  background-image: url('../../images/dorm_images/pics/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+
+.about-container {
+  margin: 2rem auto;
+  max-width: 800px;
+  text-align: center;
+  padding-top: 60px;
+  border-radius: 10px;
+}
+
+
+
+.about-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.about-description {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.about-subheader {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+
+.team-member {
+  margin: 1.5rem;
+  width: 250px;
+}
+
+.team-member-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.team-member-name {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.team-member-major {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.acknowledgments {
+  margin-top: 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}

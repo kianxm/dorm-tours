@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Dorm from './pages/Dorm';
 import Navbar from './components/Navbar/Navbar';
 import NotFound from './pages/NotFound';
+import About from './components/Navbar/About'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='dorms/:name' element={<Dorm />}/>
+          <Route path='/about' element={<About />} />
           <Route path='*' element={<NotFound />}/>
         </Routes>
       </Router>

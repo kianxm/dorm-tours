@@ -12,10 +12,9 @@ function HeroSection() {
             <p>Explore our top-rated dorms and find the perfect place to call home during your college years.<br/>With state-of-the-art amenities and a prime location on campus,<br/>you won't want to live anywhere else.</p>
             <div className='hero-btns'>
               <Button 
-              className='btns' 
-              buttonStyle='btn--outline'
-              buttonSize='btn--large'
-              >
+                className='btns' 
+                buttonStyle='btn--outline'
+                buttonSize='btn--large'>
                 GET STARTED
               </Button>
             </div>
