@@ -54,7 +54,7 @@ function Navbar() {
                         <Link to="/About">About Us</Link>
                     </li>
                     <li>
-                        <Link to="#">Learn More</Link>
+                        <Link to="/LearnMore">Learn More</Link>
                     </li>
                 </ul>
             </nav>

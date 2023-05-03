@@ -6,6 +6,8 @@ import Dorm from './pages/Dorm';
 import Navbar from './components/Navbar/Navbar';
 import NotFound from './pages/NotFound';
 import About from './components/Navbar/About'
+import LearnMore from './components/Navbar/LearnMore';
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='dorms/:name' element={<Dorm />}/>
           <Route path='/about' element={<About />} />
+          <Route path='/learnMore' element={<LearnMore />} />
           <Route path='*' element={<NotFound />}/>
         </Routes>
       </Router>
