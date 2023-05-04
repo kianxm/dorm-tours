@@ -30,28 +30,29 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Scroll
-            to="hero"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={1000}
-            onClick={closeMobileMenu}
-          >
+          <Link to="/" onClick={closeMobileMenu}>
             <img
               className="navbar__logo"
               src={sculogo}
               alt="SCU Virtual Dorm Tours"
             />
-          </Scroll>
+          </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Scroll
+                to="hero"
+                spy={true}
+                smooth={true}
+                className="nav-links"
+                offset={0}
+                duration={1000}
+                onClick={closeMobileMenu}
+              >
                 Home
-              </Link>
+              </Scroll>
             </li>
             <li className="nav-item">
               <Scroll

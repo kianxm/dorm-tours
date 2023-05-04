@@ -105,7 +105,8 @@
   .hero-container > h1 {
     font-size: 40px;
     margin-top: 0px;
-    text-shadow: 2px 2px 70px #000000;
+    /* text-shadow: 2px 2px 70px #000000; */
+    text-shadow: none;
   }
 
   .hero-container > p br {
