@@ -199,3 +199,119 @@
   width: 3rem;
   height: 3rem;
 }
+
+@media screen and (max-width: 768px) {
+  .dorm__tour {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .dorm__picture {
+    height: 200px;
+    width: 300px;
+  }
+
+  p {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .dorm__specifics {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dorm__specifics__row {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  .dorm__dimensions__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__text {
+    margin-top: 10px;
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .dorm__dimensions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dimensions__text {
+    margin-top: 0px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .dimensions__room__dimensions {
+    text-align: center;
+  }
+
+  li {
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .dorm__layout img {
+    height: 50vw;
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+
+  .dorm__features {
+    margin-top: 3vh;
+    text-align: center;
+  }
+
+  .dorm__features__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background-color: #dfdfdf;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 40px;
+  }
+
+  .dorm__features__container svg {
+    /* margin-left: 5px; */
+    width: 30px;
+    height: 30px;
+    padding-top: 10px;
+    color: rgb(0, 127, 169);
+  }
+
+  .dorm__features__row1 {
+    margin-right: 3vw;
+  }
+
+  .testimonials {
+    width: 400px;
+  }
+
+  .testimonial__quote {
+    font-style: italic;
+    font-size: 18px;
+    /* margin: 1rem 0 2rem; */
+    padding: 0;
+  }
+
+  .testimonials__btn-container {
+    padding-bottom: 40px;
+  }
+}

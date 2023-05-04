@@ -77,7 +77,9 @@ const Dorm = (props) => {
         <div className="dorm__dimensions__container">
           <div className="dorm__dimensions">
             <div className="dimensions__text">Room Dimensions:</div>
-            <div>{dorm.dimensions}</div>
+            <div className="dimensions__room__dimensions">
+              {dorm.dimensions}
+            </div>
             <div className="dimensions__text">Furniture Dimensions:</div>
             <ul>
               {dorm.furnitureDimensions.map((dimension, index) => (

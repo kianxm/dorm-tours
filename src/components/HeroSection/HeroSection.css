@@ -105,6 +105,11 @@
   .hero-container > h1 {
     font-size: 40px;
     margin-top: 0px;
+    text-shadow: 2px 2px 20px #000000;
+  }
+
+  .hero-container > p br {
+    display: none;
   }
 
   .span-text {
