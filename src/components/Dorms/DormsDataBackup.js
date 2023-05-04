@@ -24,25 +24,15 @@ import villas from "../../images/additional_housing_images/villas.jpg";
 
 import kian from "../../images/avatars/kian.png";
 import kian2 from "../../images/avatars/kian2.png";
-import Liying from "../../images/avatars/Liying.jpeg";
-import max from "../../images/avatars/max.png";
-import katie from "../../images/avatars/katie.jpeg";
-import collin from "../../images/avatars/collin.png";
-import calley from "../../images/avatars/calley.png";
-import john from "../../images/avatars/john.png";
-import Inez from "../../images/avatars/Inez.jpeg";
-import kinsey from "../../images/avatars/Kinsey.jpeg";
-import nicole from "../../images/avatars/nicole.jpeg";
-import jesus from "../../images/avatars/jesus.png";
-import ethan from "../../images/avatars/ethan.png";
+import vincent from "../../images/avatars/vincentavatar.jpg";
 
 const DormData = [
   {
     name: "campisi-hall",
     title: "Campisi Hall",
-    address: "Adjacent to the Malley Fitness Center",
+    address: "Salvador V. Campisi Residence Hall, Santa Clara, CA 95053",
     description:
-      "Campisi Residence Hall, home of the Communitas RLC, was built in reaction to a tripling of the student population in the 1960s. A large garden area with barbeques is adjacent to Sanfilippo Residence Hall. A complete renovation of the individual student rooms occurred in 2007, including upgrades to the personal vanities.",
+      "This is the description for Campisi Hall. This is the description for Campisi Hall. This is the description for Campisi Hall. This is the description for Campisi Hall.",
     bedCount: 2,
     sinks: 1,
     occupancy: 2,
@@ -63,31 +53,32 @@ const DormData = [
     picture: campisi,
     testimonials: [
       {
-        studentName: "Liying Liang",
-        quote: "I like that it’s quiet so you can study in the dorm",
-        grade: "Freshman",
-        avatar: Liying,
+        studentName: "Kian Malakooti",
+        quote:
+          "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+        grade: "Senior",
+        avatar: kian,
       },
       {
-        studentName: "Katie Mahoney",
+        studentName: "Matthew Gates",
         quote:
-          "Campisi is kinda quiet, but it’s a good area to be in and the lounge is super nice and if you find your people it’s pretty fun",
-        grade: "Freshman",
-        avatar: katie,
+          "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+        grade: "Senior",
+        avatar: kian2,
       },
       {
-        studentName: "Collin Paiz",
+        studentName: "Eva Stenberg",
         quote:
-          "Even though it's quiet, if you want to find something to do and hang out with people you can",
-        grade: "Sophomore",
-        avatar: collin,
+          "(3) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+        grade: "Senior",
+        avatar: kian,
       },
     ],
   },
   {
     name: "casa-hall",
     title: "Casa Italiana Hall",
-    address: "Between Bellomy Field and Sobrato Residence Hall",
+    address: "",
     description: "This is the description for Casa Hall.",
     bedCount: 2,
     sinks: 1,
@@ -127,9 +118,8 @@ const DormData = [
   {
     name: "dunne-hall",
     title: "Dunne Hall",
-    address: "Located on the northwest tip of campus",
-    description:
-      "The Dunne Residence Hall is home to the Modern Perspectives Residential Learning Community. It was opened to accommodate Santa Clara University's growing student population and has coed floors for first-year and sophomore students. Outer amenities include a large community space in the basement, lounges on every floor, a sand volleyball court located adjacent to the building and ample lawn space on the Kennedy mall.",
+    address: "",
+    description: "This is the description for Dunne Hall.",
     bedCount: 2,
     sinks: 1,
     occupancy: 2,
@@ -166,9 +156,8 @@ const DormData = [
   {
     name: "finn-hall",
     title: "Finn Hall",
-    address: "Located across the street from Safeway.",
-    description:
-      "Finn is a four-story, Y-Shaped building with three wings. Residents live in mini-suites, with a shared toilet and shower area, and a sink and vanity in each double room. Approximately 30 residents live on each of the twelve wings, with one Community Facilitator on each wing. At the center of each of the four floors, a large, open kitchen and lounge area serves as the primary communal space. A different gaming table is located in this area on each floor. Each wing has a small lounge area and glass-walled study space. There are also laundry rooms located near the central lounge on each of the four floors. On the first floor, a large multi-purpose room serves as a community-wide gathering space and classroom. In the space directly outside of the building, a gas grill area and patio seating are available to Finn residents. Each resident living in a Finn mini-suite double is provided a twin XL bed frame and mattress, desk, rolling desk cabinet, desk chair, and set of three stacking dresser drawers. Two shared spaces not pictured include the closet and vanity with sink, cabinet, and drawers.",
+    address: "",
+    description: "This is the description for Finn Hall.",
     bedCount: "2-3",
     sinks: 1,
     occupancy: "2-3",
@@ -190,26 +179,26 @@ const DormData = [
     picture: finn,
     testimonials: [
       {
-        studentName: "Calley Lwin",
-        quote: "Very nice living conditions considering it's a dorm",
-        grade: "Freshman",
-        avatar: calley,
+        studentName: "Kian Malakooti",
+        quote:
+          "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+        grade: "Senior",
+        avatar: kian,
       },
       {
-        studentName: "John Oran",
+        studentName: "Matthew Gates",
         quote:
-          "It's quiet and not as social as other dorms which is perfect for someone like me!",
-        grade: "Freshman",
-        avatar: john,
+          "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+        grade: "Senior",
+        avatar: kian2,
       },
     ],
   },
   {
     name: "graham-hall",
     title: "Graham Hall",
-    address: "Located in the central part of campus",
-    description:
-      "Graham Hall is the home of the Alpha Residential Learning Community. This four-story building houses approximately 350 undergraduate residents. Graham Hall is made up of four neighborhoods, A-D, that are comprised of community lounge, kitchen and laundry room for the convenience of the residents. The rooms are designed as mini-suites with a set of roommates sharing an adjoining bathroom with another set of suitemates. The Graham courtyard also offers residents two barbecue and picnic areas as well as plenty of space to enjoy other outdoor activities.",
+    address: "",
+    description: "This is the description for Graham Hall.",
     bedCount: "1-3",
     sinks: 1,
     occupancy: "1-3",
@@ -227,38 +216,30 @@ const DormData = [
       'Vanity: 43"W x 23"D x 34"H',
     ],
     amenities: "Air conditioning, laundry facilities, study lounge",
-    embedLink: "https://my.treedis.com/tour/graham-lobby",
+    embedLink: "https://my.treedis.com/tour/graham-dorm-room-1",
     picture: graham,
     testimonials: [
       {
-        studentName: "Inez Low",
+        studentName: "Kian Malakooti",
         quote:
-          "I liked how it was quiet but if you wanted to socialize we could go somewhere else. also not having communal bathrooms was great",
-        grade: "Freshman",
-        avatar: Inez,
+          "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+        grade: "Senior",
+        avatar: kian,
       },
       {
-        studentName: "Kinsey",
+        studentName: "Matthew Gates",
         quote:
-          "Having a dorm with non communal bathrooms is amazing and it’s the perfect balance of quiet yet still social",
-        grade: "Sophomore",
-        avatar: kinsey,
-      },
-      {
-        studentName: "Jesus",
-        quote:
-          "It has a great location, being in the middle of the gym, the dining hall, and the library!",
-        grade: "Freshman",
-        avatar: jesus,
+          "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+        grade: "Senior",
+        avatar: kian2,
       },
     ],
   },
   {
     name: "mcwalsh-hall",
     title: "McLaughlin-Walsh Hall",
-    address: "Located on west side of campus adjacent to the Kennedy Mall",
-    description:
-      "McLaughlin Residence Hall, along with Walsh Residence Hall, are home to the Unity Residential Learning Community. These three-story buildings are near identical in layout and offer similar accommodations. Each building is co-ed and features large rooms with in-room vanities and sinks. The adjacent outdoor amenities include a sand volleyball court and ample green space on Kennedy Mall for activities such as throwing around a frisbee or enjoying the sunshine.",
+    address: "",
+    description: "This is the description for McWalsh Hall.",
     bedCount: 2,
     sinks: 1,
     occupancy: 2,
@@ -401,11 +382,11 @@ const DormData = [
     picture: sobrato,
     testimonials: [
       {
-        studentName: "Kian Malakooti",
+        studentName: "Vincent Sobal",
         quote:
-          "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
-        grade: "Senior",
-        avatar: kian,
+          "Sobrato Hall is a great place to hang out and relax. Although it may be quiet at times, the atmosphere can become quite lively when you have company. It's the perfect spot to spend time with friends, and I recommend it to anyone looking for a cozy and comfortable environment.",
+        grade: "Junior",
+        avatar: vincent,
       },
       {
         studentName: "Matthew Gates",
@@ -436,29 +417,23 @@ const DormData = [
       'Vanity: 59"W x 21"D x 34"H',
       'Mattress Dimensions: 80"L x 38"W x 7.5"H',
     ],
-    amenities:
-      "Air conditioning, laundry facilities, study lounge, sky lounge, dance room, art room",
-    embedLink: "https://my.treedis.com/tour/swig-lobby",
+    amenities: "Air conditioning, laundry facilities, study lounge",
+    embedLink: "https://my.treedis.com/tour/swig-dorm-room",
     picture: swig,
     testimonials: [
       {
-        studentName: "Max Schiff",
-        quote: "Everyone was very social, the view from my room was very nice",
-        grade: "Junior",
-        avatar: max,
-      },
-      {
-        studentName: "Nicole Robison",
-        quote: "It was social--great for freshman year, but ONLY freshman year",
-        grade: "Freshman",
-        avatar: nicole,
-      },
-      {
-        studentName: "Ethan Lagasse",
+        studentName: "Kian Malakooti",
         quote:
-          "There were so many people so close by! Made it easy to meet and make friends",
-        grade: "Freshman",
-        avatar: ethan,
+          "This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+        grade: "Senior",
+        avatar: kian,
+      },
+      {
+        studentName: "Matthew Gates",
+        quote:
+          "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
+        grade: "Senior",
+        avatar: kian2,
       },
     ],
   },

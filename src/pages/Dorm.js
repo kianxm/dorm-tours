@@ -76,9 +76,7 @@ const Dorm = (props) => {
         </div>
 
         <div className="dorm__description__container">
-          <h2 className="header__text">
-            Description <MdOutlineDescription />
-          </h2>
+          <h2 className="header__text">Description</h2>
           <div className="dorm__description">{dorm.description}</div>
         </div>
 
