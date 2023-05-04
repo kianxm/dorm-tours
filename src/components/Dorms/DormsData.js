@@ -31,7 +31,8 @@ const DormData = [
     name: "campisi-hall",
     title: "Campisi Hall",
     address: "Salvador V. Campisi Residence Hall, Santa Clara, CA 95053",
-    description: "This is the description for Campisi Hall.",
+    description:
+      "This is the description for Campisi Hall. This is the description for Campisi Hall. This is the description for Campisi Hall. This is the description for Campisi Hall.",
     bedCount: 2,
     sinks: 1,
     occupancy: 2,

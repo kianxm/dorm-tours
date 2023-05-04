@@ -13,7 +13,11 @@ import {
   AiFillLeftCircle,
   AiFillRightCircle,
 } from "react-icons/ai";
-import { MdOutlineLocalLaundryService, MdSoupKitchen } from "react-icons/md";
+import {
+  MdOutlineLocalLaundryService,
+  MdSoupKitchen,
+  MdOutlineDescription,
+} from "react-icons/md";
 import { ImBooks, ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 
 const Dorm = (props) => {
@@ -69,6 +73,13 @@ const Dorm = (props) => {
               <BsFillPeopleFill /> {dorm.occupancy} people
             </div>
           </div>
+        </div>
+
+        <div className="dorm__description__container">
+          <h2 className="header__text">
+            Description <MdOutlineDescription />
+          </h2>
+          <div className="dorm__description">{dorm.description}</div>
         </div>
 
         <h2 className="header__text">
