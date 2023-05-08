@@ -42,17 +42,9 @@ function Navbar() {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Scroll
-                to="hero"
-                spy={true}
-                smooth={true}
-                className="nav-links"
-                offset={0}
-                duration={1000}
-                onClick={closeMobileMenu}
-              >
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
-              </Scroll>
+              </Link>
             </li>
             <li className="nav-item">
               <Scroll
@@ -68,13 +60,17 @@ function Navbar() {
               </Scroll>
             </li>
             <li className="nav-item">
-              <Link
-                to="/about-us"
+              <Scroll
+                to="about"
                 className="nav-links"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={1000}
                 onClick={closeMobileMenu}
               >
                 About Us
-              </Link>
+              </Scroll>
             </li>
             <li className="nav-item">
               <Scroll
@@ -82,15 +78,27 @@ function Navbar() {
                 className="nav-links"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-60}
                 duration={1000}
                 onClick={closeMobileMenu}
               >
-                Learn More
+                Matterport
+              </Scroll>
+            </li>
+            <li className="nav-item">
+              <Scroll
+                to="faq"
+                className="nav-links"
+                spy={true}
+                smooth={true}
+                offset={-60}
+                duration={1000}
+                onClick={closeMobileMenu}
+              >
+                FAQ
               </Scroll>
             </li>
           </ul>
-          {/* {button && <Button buttonStyle='btn--outline'>Learn More</Button>} */}
         </div>
       </nav>
     </>
