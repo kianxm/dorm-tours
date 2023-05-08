@@ -88,7 +88,8 @@ const DormData = [
     name: "casa-hall",
     title: "Casa Italiana Hall",
     address: "Between Bellomy Field and Sobrato Residence Hall",
-    description: "This is the description for Casa Hall.",
+    description:
+      "Casa Italiana Residence Hall is a co-ed residence hall that houses approximately 380 students and offers a variety of living options. Casa Italiana is composed of two sections: Casa Vintage and Casa Modern. Casa Vintage has traditional-style, single rooms with community bathrooms and no air conditioning. Casa Modern has suite-style apartments, which have four bedrooms, two bathrooms, and a kitchen or living room, and air conditioning. The larger communal spaces include a common room, fully-equipped kitchen, 4th-floor terrace, commuter lounge, three classrooms, and several lounges with TVs, billiards, ping pong tables, foosball tables, and pianos. A large courtyard provides outdoor seating, charcoal barbecues, and a bocce ball court.",
     bedCount: 2,
     sinks: 1,
     occupancy: 2,
@@ -168,7 +169,7 @@ const DormData = [
     title: "Finn Hall",
     address: "Located across the street from Safeway.",
     description:
-      "Finn is a four-story, Y-Shaped building with three wings. Residents live in mini-suites, with a shared toilet and shower area, and a sink and vanity in each double room. Approximately 30 residents live on each of the twelve wings, with one Community Facilitator on each wing. At the center of each of the four floors, a large, open kitchen and lounge area serves as the primary communal space. A different gaming table is located in this area on each floor. Each wing has a small lounge area and glass-walled study space. There are also laundry rooms located near the central lounge on each of the four floors. On the first floor, a large multi-purpose room serves as a community-wide gathering space and classroom. In the space directly outside of the building, a gas grill area and patio seating are available to Finn residents. Each resident living in a Finn mini-suite double is provided a twin XL bed frame and mattress, desk, rolling desk cabinet, desk chair, and set of three stacking dresser drawers. Two shared spaces not pictured include the closet and vanity with sink, cabinet, and drawers.",
+      "Finn is a four-story, Y-Shaped building with three wings. Residents live in mini-suites, with a shared toilet and shower area, and a sink and vanity in each double room. Approximately 30 residents live on each of the twelve wings, with one Community Facilitator on each wing. At the center of each of the four floors, a large, open kitchen and lounge area serves as the primary communal space. A different gaming table is located in this area on each floor. Each wing has a small lounge area and glass-walled study space. There are also laundry rooms located near the central lounge on each of the four floors. On the first floor, a large multi-purpose room serves as a community-wide gathering space and classroom. In the space directly outside of the building, a gas grill area and patio seating are available to Finn residents. Each resident living in a Finn mini-suite double is provided a twin XL bed frame and mattress, desk, rolling desk cabinet, desk chair, and set of three stacking dresser drawers.",
     bedCount: "2-3",
     sinks: 1,
     occupancy: "2-3",
@@ -299,7 +300,8 @@ const DormData = [
     name: "nobili-hall",
     title: "Nobili Hall",
     address: "",
-    description: "This is the description for Dunne Hall.",
+    description:
+      "Nobili Residence Hall is dedicated to Rev. John Nobili, S.J., the first President of Santa Clara University. Nobili originally housed dining rooms, professors, and upperclassmen but in the 1970s it eventually solely became the home of Jesuit priests on-campus. In the summer of 2006, the Jesuits moved out of Nobili and into their new residence, opening the residence hall for Juniors and Seniors. The building features large single, double, and triple rooms with private in-room bathrooms as well as sweeping views of the Mission Gardens.",
     bedCount: 2,
     sinks: 1,
     occupancy: 2,
@@ -339,7 +341,8 @@ const DormData = [
     name: "sanfillipo-hall",
     title: "Sanfillipo Hall",
     address: "",
-    description: "This is the description for Sanfillipo Hall.",
+    description:
+      "Sanfilippo Hall is a three-story, L-shaped building with two wings, located on the east side of campus, adjacent to Cowell Health Center. Rooms are traditional doubles with a vanity and sink in each space. Communal restrooms are on each floor. Approximately 65 students live on each of the three floors, with one Community Facilitator on each wing. Amenities available in the building include floor lounges, a communal basement space, balconies, a communal kitchen, and laundry rooms. Sanfilippo does not have air conditioning. The quad between Campisi and Sanfilippo halls has several charcoal grills, picnic benches, and a large grassy area for student use. Each student living in a Sanfilippo standard double is provided a twin XL bed frame and mattress, desk, desk cabinet, desk chair, and set of three stacking dresser drawers.",
     bedCount: 2,
     sinks: 1,
     occupancy: 2,
@@ -379,7 +382,8 @@ const DormData = [
     name: "sobrato-hall",
     title: "Sobrato Hall",
     address: "",
-    description: "This is the description for Sobrato Hall.",
+    description:
+      "Sobrato is a four-year, co-ed space that houses approximately 300 residents, and offers a variety of living options. Sobrato's front building includes suites of four single rooms, one double room, two shared bathrooms and one common area; while Sobrato's back building is apartments made up of four single rooms, two bathrooms, a kitchen and a common area. Sobrato has air conditioning in both common and indivdual spaces throughout the hall. Each floor has 30-60 residents, and regardless of their living style, students will find a sense of community throughout the building. Sobrato's community spaces include the Commons and community kitchen, the Den, and the Sobrato classrooms.",
     bedCount: "6-10",
     sinks: 4,
     occupancy: "6-10",
@@ -420,7 +424,8 @@ const DormData = [
     name: "swig-hall",
     title: "Swig Hall",
     address: "",
-    description: "This is the description for Swig Hall.",
+    description:
+      "Swig Hall is an eleven-story tower with ten residential floors, an 11th-floor lounge, and communal space in the basement. Rooms are traditional doubles with a vanity and sink in each space. Communal restrooms, one male and one female, are on each floor. Approximately 40 students live on each of the ten floors, with one Community Facilitator per floor. There are communal kitchens on several floors in the building, and a large laundry room is located in the basement. The basement has additional communal spaces, including a dance studio and music room. Swig does not have air conditioning. Each student living in a Swig Hall standard double is provided a twin XL bed frame and mattress, desk, rolling desk cabinet, desk chair, wardrobe, and set of three stacking dresser drawers.",
     bedCount: 2,
     sinks: 1,
     occupancy: 2,
@@ -466,7 +471,8 @@ const DormData = [
     name: "villas",
     title: "University Villas",
     address: "",
-    description: "This is the description for Villas.",
+    description:
+      "The University Villas Residence Hall is a residential space for Santa Clara University junior and senior undergraduate students. This residence hall features 138 townhouse units across 11 building units. All the townhouses are equipped with gourmet kitchens that feature granite counters, stainless appliances, and cherry cabinets. The apartments are fully furnished and include full-sized beds for students. Each townhouse is also equipped with air conditioning and an in-unit washer and dryer. Additionally, this gated community offers a secure parking lot, communal study space, an outdoor courtyard, a grassy area for volleyball games, numerous grilling stations, and a multi-purpose room equipped with media services.",
     bedCount: 2,
     sinks: 1,
     occupancy: 2,
