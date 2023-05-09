@@ -42,7 +42,7 @@ const DormData = [
     title: "Campisi Hall",
     address: "Adjacent to the Malley Fitness Center",
     description:
-      "Campisi Residence Hall, home of the Communitas RLC, was built in reaction to a tripling of the student population in the 1960s. A large garden area with barbeques is adjacent to Sanfilippo Residence Hall. A complete renovation of the individual student rooms occurred in 2007, including upgrades to the personal vanities.",
+      "Campisi is a three-story, L-Shaped building with two wings, located on the east side of campus, directly across from Malley Fitness Center. Rooms are traditional doubles with a vanity and sink in each space. Communal restrooms are on each floor. Approximately 65 students live on each of the three floors, with one Community Facilitator on each wing. Amenities available in the building include floor lounges, a communal basement space, balconies, a communal kitchen, laundry rooms and Air conditioning in both individual rooms and common spaces. The quad between Campisi and Sanfilippo halls has several charcoal grills, picnic benches, and a large grassy area for student use. Each student living in a Campisi standard double, is provided a twin XL bed frame and mattress, desk, desk cabinet, desk chair, and set of three stacking dresser drawers. Two shared spaces include the closet and vanity with sink, cabinet, and drawers.",
     bedCount: 2,
     sinks: 1,
     occupancy: 2,
@@ -61,6 +61,17 @@ const DormData = [
     amenities: "Air conditioning, laundry facilities, study lounge",
     embedLink: "https://my.treedis.com/tour/campisi-lobby",
     picture: campisi,
+    features: [
+      "Great Community",
+      "Location",
+      "Air-conditioning",
+      "Great basement lounge area",
+      "Very nice people",
+      "Nice place to study",
+      "Central to campus",
+      "Quiet",
+      "Not very social",
+    ],
     testimonials: [
       {
         studentName: "Liying Liang",
@@ -108,6 +119,14 @@ const DormData = [
     amenities: "Air conditioning, laundry facilities, study lounge",
     embedLink: "",
     picture: casa,
+    features: [
+      "Located near the gym/courts",
+      "Air-conditioning",
+      "Classes in the building",
+      "Great place to study",
+      "Quiet",
+      "Not very social",
+    ],
     testimonials: [
       {
         studentName: "Kian Malakooti",
@@ -147,6 +166,12 @@ const DormData = [
     amenities: "Air conditioning, laundry facilities, study lounge",
     embedLink: "",
     picture: dunne,
+    features: [
+      "Great Community",
+      "Location",
+      "Social dorm",
+      "Located next to Swig Hall",
+    ],
     testimonials: [
       {
         studentName: "Kian Malakooti",
@@ -169,7 +194,7 @@ const DormData = [
     title: "Finn Hall",
     address: "Located across the street from Safeway.",
     description:
-      "Finn is a four-story, Y-Shaped building with three wings. Residents live in mini-suites, with a shared toilet and shower area, and a sink and vanity in each double room. Approximately 30 residents live on each of the twelve wings, with one Community Facilitator on each wing. At the center of each of the four floors, a large, open kitchen and lounge area serves as the primary communal space. A different gaming table is located in this area on each floor. Each wing has a small lounge area and glass-walled study space. There are also laundry rooms located near the central lounge on each of the four floors. On the first floor, a large multi-purpose room serves as a community-wide gathering space and classroom. In the space directly outside of the building, a gas grill area and patio seating are available to Finn residents. Each resident living in a Finn mini-suite double is provided a twin XL bed frame and mattress, desk, rolling desk cabinet, desk chair, and set of three stacking dresser drawers.",
+      "Finn is a four-story, Y-Shaped building with three wings, located across the street from Safeway. Residents live in mini-suites, with a shared toilet and shower area, and a sink and vanity in each double room. Approximately 30 residents live on each of the twelve wings, with one Community Facilitator on each wing. At the center of each of the four floors, a large, open kitchen and lounge area serves as the primary communal space. A different gaming table is located in this area on each floor. Each wing has a small lounge area and glass-walled study space. There are also laundry rooms located near the central lounge on each of the four floors. Finn has air conditioning in both communal spaces and individual rooms. On the first floor, a large multi-purpose room serves as a community-wide gathering space and classroom. In the space directly outside of the building, a gas grill area and patio seating are available to Finn residents.",
     bedCount: "2-3",
     sinks: 1,
     occupancy: "2-3",
@@ -189,6 +214,13 @@ const DormData = [
     amenities: "Air conditioning, laundry facilities, study lounge",
     embedLink: "https://my.treedis.com/tour/finn-lobby",
     picture: finn,
+    features: [
+      "Very pacious",
+      "Suite-style",
+      "Great common rooms",
+      "Modern living conditions",
+      "Quiet",
+    ],
     testimonials: [
       {
         studentName: "Calley Lwin",
@@ -230,6 +262,15 @@ const DormData = [
     amenities: "Air conditioning, laundry facilities, study lounge",
     embedLink: "https://my.treedis.com/tour/graham-lobby",
     picture: graham,
+    features: [
+      "Close to classes",
+      "Clean & modern",
+      "Central location",
+      "Spacious room",
+      "Shared bathroom",
+      "Air-conditioning",
+      "Quiet but can find excitement",
+    ],
     testimonials: [
       {
         studentName: "Inez Low",
@@ -279,6 +320,14 @@ const DormData = [
     amenities: "Air conditioning, laundry facilities, study lounge",
     embedLink: "",
     picture: mcwalsh,
+    features: [
+      "Very nice people",
+      "Cozy dorm room size",
+      "Central to campus",
+      "Next to Benson cafeteria",
+      "Quiet",
+      "Not very social",
+    ],
     testimonials: [
       {
         studentName: "Kian Malakooti",
@@ -320,6 +369,13 @@ const DormData = [
     amenities: "Air conditioning, laundry facilities, study lounge",
     embedLink: "",
     picture: nobili,
+    features: [
+      "Older building",
+      "Mostly upperclassmen",
+      "Nice place to study",
+      "Quiet",
+      "Not very social",
+    ],
     testimonials: [
       {
         studentName: "Kian Malakooti",
@@ -361,6 +417,12 @@ const DormData = [
     amenities: "Air conditioning, laundry facilities, study lounge",
     embedLink: "",
     picture: flip,
+    features: [
+      "No Air-conditioning",
+      "Adjacent to Graham and Sobrato Hall",
+      "Social dorm",
+      "Older building",
+    ],
     testimonials: [
       {
         studentName: "Kian Malakooti",
@@ -403,6 +465,16 @@ const DormData = [
     amenities: "Air conditioning, laundry facilities, study lounge",
     embedLink: "",
     picture: sobrato,
+    features: [
+      "Suite style for 6+ people",
+      "Classrooms inside",
+      "Air-conditioning",
+      "Kitchen in each suite",
+      "Very nice people",
+      "Nice place to study",
+      "Quiet",
+      "Not very social",
+    ],
     testimonials: [
       {
         studentName: "Kian Malakooti",
@@ -445,10 +517,19 @@ const DormData = [
       "Air conditioning, laundry facilities, study lounge, sky lounge, dance room, art room",
     embedLink: "https://my.treedis.com/tour/swig-lobby",
     picture: swig,
+    features: [
+      "Very social",
+      "Easy to meet people",
+      "Outgoing",
+      "Good location",
+      "Great for freshman year",
+      "Easy to meet and make friends",
+    ],
     testimonials: [
       {
-        studentName: "Max Schiff",
-        quote: "Everyone was very social, the view from my room was very nice",
+        studentName: "Max Shiff",
+        quote:
+          "Swig was great for meeting people, but not the place for studying. Do that in the library!!",
         grade: "Junior",
         avatar: max,
       },
@@ -490,6 +571,13 @@ const DormData = [
     amenities: "Air conditioning, laundry facilities, study lounge",
     embedLink: "",
     picture: villas,
+    features: [
+      "Located off-campus",
+      "Mostly upperclassmen",
+      "Apartment style",
+      "Quiet",
+      "Not very social",
+    ],
     testimonials: [
       {
         studentName: "Kian Malakooti",

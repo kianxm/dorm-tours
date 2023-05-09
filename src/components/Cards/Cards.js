@@ -28,9 +28,9 @@ const Cards = () => {
   return (
     <div className="cards" id="dorms">
       <h1>On-campus Dorms</h1>
-      <Fade top distance="5%" cascade>
-        <div className="cards__container">
-          <div className="cards__wrapper">
+      <div className="cards__container">
+        <div className="cards__wrapper">
+          <Fade top distance="10%">
             <ul className="cards__items">
               <CardItem
                 src={campisi}
@@ -51,6 +51,8 @@ const Cards = () => {
                 path="/dorms/dunne-hall"
               />
             </ul>
+          </Fade>
+          <Fade top distance="10%">
             <ul className="cards__items">
               <CardItem
                 src={finn}
@@ -71,6 +73,8 @@ const Cards = () => {
                 path="/dorms/graham-hall"
               />
             </ul>
+          </Fade>
+          <Fade top distance="10%">
             <ul className="cards__items">
               <CardItem
                 src={mcwalsh}
@@ -91,9 +95,9 @@ const Cards = () => {
                 path="/dorms/swig-hall"
               />
             </ul>
-          </div>
+          </Fade>
         </div>
-      </Fade>
+      </div>
 
       <Fade top distance="15%">
         <h1>Additional Housing</h1>

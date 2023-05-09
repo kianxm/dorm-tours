@@ -72,6 +72,19 @@
   padding: 20px;
 }
 
+.dorm__spec__features {
+  background-color: #dfdfdf;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.star__svg {
+  margin-top: 5px;
+  color: rgb(0, 127, 169);
+}
+
 .dorm__dimensions__container {
   display: flex;
   flex-direction: row;
@@ -214,6 +227,24 @@
   height: 3rem;
 }
 
+.dorm__pricing:link,
+.dorm__pricing:visited {
+  background-color: rgb(192, 6, 61);
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.dorm__pricing:hover,
+.dorm__pricing:active {
+  background-color: grey;
+  border: black;
+}
+
 @media screen and (max-width: 768px) {
   .dorm__tour {
     display: block;
@@ -251,8 +282,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding-left: 15px; */
-    /* padding-right: 15px; */
     width: 90vw;
     margin-bottom: 20px;
   }
@@ -261,7 +290,13 @@
     text-align: center;
     background-color: #dfdfdf;
     border-radius: 10px;
-    /* padding: 20px; */
+  }
+
+  .dorm__spec__features {
+    background-color: #dfdfdf;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
   }
 
   .dorm__dimensions__container {

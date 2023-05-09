@@ -7,11 +7,16 @@ import { useState } from "react";
 import { FaBed, FaSink } from "react-icons/fa";
 import { BsFillPeopleFill, BsStars } from "react-icons/bs";
 import { SlSizeFullscreen } from "react-icons/sl";
-import { TbAirConditioning, TbParking } from "react-icons/tb";
+import {
+  TbAirConditioning,
+  TbParking,
+  TbFileDescription,
+} from "react-icons/tb";
 import {
   AiOutlineWifi,
   AiFillLeftCircle,
   AiFillRightCircle,
+  AiFillStar,
 } from "react-icons/ai";
 import {
   MdOutlineLocalLaundryService,
@@ -19,6 +24,7 @@ import {
   MdOutlineDescription,
 } from "react-icons/md";
 import { ImBooks, ImQuotesLeft, ImQuotesRight } from "react-icons/im";
+import { RiStarSmileLine } from "react-icons/ri";
 
 const Dorm = (props) => {
   const { name } = useParams();
@@ -73,11 +79,33 @@ const Dorm = (props) => {
               <BsFillPeopleFill /> {dorm.occupancy} people
             </div>
           </div>
+          <a
+            className="dorm__pricing"
+            href="https://www.scu.edu/living/residential-living-options/2022-2023-room--board-rates/"
+            target="_blank"
+          >
+            View prices
+          </a>
         </div>
 
         <div className="dorm__description__container">
-          <h2 className="header__text">Description</h2>
+          <h2 className="header__text">
+            Description <TbFileDescription />
+          </h2>
           <div className="dorm__description">{dorm.description}</div>
+        </div>
+
+        <h2 className="header__text">
+          Characteristics <RiStarSmileLine />
+        </h2>
+        <div className="dorm__spec__features">
+          <ul className="dorm__spec__features__list">
+            {dorm.features.map((feature, index) => (
+              <li key={index}>
+                <AiFillStar className="star__svg" /> {feature}
+              </li>
+            ))}
+          </ul>
         </div>
 
         <h2 className="header__text">
@@ -108,7 +136,7 @@ const Dorm = (props) => {
           <div className="dorm__features__container">
             <div className="dorm__features__row1">
               <div>
-                <TbAirConditioning /> AC cooling & heating
+                <TbAirConditioning /> Cooling depends on dorm
               </div>
               <div>
                 <AiOutlineWifi /> High-speed internet
