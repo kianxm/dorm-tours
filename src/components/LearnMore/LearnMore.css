@@ -79,3 +79,12 @@
     list-style: none;
   }
 }
+
+@media only screen and (min-width: 834px) and (max-height: 1194px) and (orientation: landscape) {
+  .faq {
+    height: 100%;
+  }
+  .faq-container {
+    padding-bottom: 30px;
+  }
+}
