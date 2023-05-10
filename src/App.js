@@ -1,11 +1,10 @@
-import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Home from './pages/Home'
-import Dorm from './pages/Dorm';
-import Navbar from './components/Navbar/Navbar';
-// import NavbarBackup from './components/Navbar/Navbar2';
-import NotFound from './pages/NotFound';
+import Home from "./pages/Home";
+import Dorm from "./pages/Dorm";
+import Navbar from "./components/Navbar/Navbar";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -13,9 +12,9 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='dorms/:name' element={<Dorm />}/>
-          <Route path='*' element={<NotFound />}/>
+          <Route path="/" element={<Home />} />
+          <Route path="dorms/:name" element={<Dorm />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </>

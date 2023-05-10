@@ -23,8 +23,8 @@ import swig from "../../images/dorm_images/pics/swig.jpg";
 import villas from "../../images/additional_housing_images/villas.jpg";
 
 import kian from "../../images/avatars/kian.png";
-import kian2 from "../../images/avatars/kian2.png";
 import Liying from "../../images/avatars/Liying.jpeg";
+import matty from "../../images/avatars/matty.jpeg";
 import max from "../../images/avatars/max.png";
 import katie from "../../images/avatars/katie.jpeg";
 import collin from "../../images/avatars/collin.png";
@@ -140,7 +140,7 @@ const DormData = [
         quote:
           "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
         grade: "Senior",
-        avatar: kian2,
+        avatar: matty,
       },
     ],
   },
@@ -185,7 +185,7 @@ const DormData = [
         quote:
           "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
         grade: "Senior",
-        avatar: kian2,
+        avatar: matty,
       },
     ],
   },
@@ -341,7 +341,7 @@ const DormData = [
         quote:
           "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
         grade: "Senior",
-        avatar: kian2,
+        avatar: matty,
       },
     ],
   },
@@ -389,7 +389,7 @@ const DormData = [
         quote:
           "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
         grade: "Senior",
-        avatar: kian2,
+        avatar: matty,
       },
     ],
   },
@@ -436,7 +436,7 @@ const DormData = [
         quote:
           "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
         grade: "Senior",
-        avatar: kian2,
+        avatar: matty,
       },
     ],
   },
@@ -488,7 +488,7 @@ const DormData = [
         quote:
           "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
         grade: "Senior",
-        avatar: kian2,
+        avatar: matty,
       },
     ],
   },
@@ -523,7 +523,7 @@ const DormData = [
       "Outgoing",
       "Good location",
       "Great for freshman year",
-      "Easy to meet and make friends",
+      "Easy to make friends",
     ],
     testimonials: [
       {
@@ -591,7 +591,7 @@ const DormData = [
         quote:
           "(2) This is my testimonial quote. The dorm is very quiet but it's great for someone like me!",
         grade: "Senior",
-        avatar: kian2,
+        avatar: matty,
       },
     ],
   },
