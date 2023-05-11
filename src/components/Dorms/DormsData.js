@@ -263,19 +263,19 @@ const DormData = [
     embedLink: "https://my.treedis.com/tour/graham-lobby",
     picture: graham,
     features: [
-      "Close to classes",
+      "Quiet but can find excitement",
       "Clean & modern",
       "Central location",
+      "Athlete favorite",
       "Spacious room",
-      "Shared bathroom",
+      "En Suite bathroom",
       "Air-conditioning",
-      "Quiet but can find excitement",
     ],
     testimonials: [
       {
         studentName: "Inez Low",
         quote:
-          "I liked how it was quiet but if you wanted to socialize we could go somewhere else. also not having communal bathrooms was great",
+          "I liked how it was quiet but if you wanted to socialize you would have to go somewhere else. Also not having communal bathrooms was great!",
         grade: "Freshman",
         avatar: Inez,
       },
@@ -535,14 +535,15 @@ const DormData = [
       },
       {
         studentName: "Nicole Robison",
-        quote: "It was social--great for freshman year, but ONLY freshman year",
+        quote:
+          "As a quiet and introverted person, Swig was overwhelming for me and I wish I chose a quieter dorm.",
         grade: "Freshman",
         avatar: nicole,
       },
       {
         studentName: "Ethan Lagasse",
         quote:
-          "There were so many people so close by! Made it easy to meet and make friends",
+          "There were so many people close by and made it easy to meet and make friends. It was great for freshman year, but ONLY freshman year.",
         grade: "Freshman",
         avatar: ethan,
       },
