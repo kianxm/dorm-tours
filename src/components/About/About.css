@@ -1,106 +1,140 @@
 .about {
-  width: 100%;
-  height: 100vh;
-  background: #eaeaea;
-  margin-top: -32px;
-  text-align: center;
+  padding: 120px 28px;
+  background: var(--color-paper-soft);
+  color: var(--color-ink);
 }
 
-.about-header {
-  font-size: 2.5rem;
-  padding-top: 30px;
-  font-weight: bold;
-  margin: 2rem auto;
-  color: rgb(179, 7, 56);
-  text-shadow: 0 0 20px #c8c8c8;
-}
-
-.about-description {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  margin: 2rem auto;
-  max-width: 800px;
-}
-
-.about-subheader {
-  margin-top: 2rem;
-  font-size: 2rem;
-  font-weight: bold;
-  color: rgb(179, 7, 56);
-  text-shadow: 0 0 20px #c8c8c8;
-}
-
-.team-container {
+.about__container {
+  max-width: 1100px;
+  margin: 0 auto;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  overflow-x: auto;
-  /* margin-top: 2rem; */
+  flex-direction: column;
+  gap: 64px;
 }
 
-.team-member {
-  margin: 1.5rem;
-  width: 250px;
+.about__header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 760px;
 }
 
-.team-member-img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+.about__eyebrow {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-bronco);
 }
 
-.team-member-name {
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  font-weight: bold;
+.about__title {
+  font-size: clamp(1.9rem, 3.6vw, 2.8rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
 }
 
-.team-member-major {
-  font-size: 1rem;
-  font-style: italic;
-}
-
-.acknowledgments {
-  /* margin-top: 2rem; */
+.about__lede {
   font-size: 1.1rem;
-  line-height: 1.5;
-  margin: 2rem auto;
-  max-width: 1200px;
+  color: var(--color-muted);
+  line-height: 1.65;
 }
 
-.acknowledgments h3 {
-  color: rgb(179, 7, 56);
-  font-size: 2rem;
-  padding-bottom: 1rem;
-  text-shadow: 0 0 20px #c8c8c8;
+.about__team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
 }
 
-li {
-  list-style: none;
+.about__member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 36px 24px;
+  background: var(--color-paper);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  transition: transform 0.4s var(--ease-out),
+    box-shadow 0.4s var(--ease-out), border-color 0.3s var(--ease-out);
 }
 
-@media screen and (max-width: 768px) {
+.about__member:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(179, 7, 56, 0.3);
+}
+
+.about__avatar {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 18px;
+  background: linear-gradient(
+    135deg,
+    var(--color-bronco) 0%,
+    var(--color-bronco-light) 100%
+  );
+  padding: 3px;
+}
+
+.about__avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--color-paper);
+}
+
+.about__name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.about__role {
+  margin-top: 6px;
+  font-size: 0.92rem;
+  color: var(--color-muted);
+}
+
+.about__credits {
+  padding: 32px;
+  background: var(--color-paper);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-line);
+}
+
+.about__credits h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--color-bronco);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.about__credits p {
+  color: var(--color-muted);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.about__credits strong {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+@media (max-width: 860px) {
   .about {
-    height: 100%;
+    padding: 90px 22px;
   }
-  .team-container {
-    flex-direction: column;
-    align-items: center;
+  .about__team {
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
-
-  .acknowledgments {
-    display: none;
-  }
-
-  .acknowledgments h3 {
-    display: none;
-  }
-
-  .ack-ul {
-    display: none;
+  .about__container {
+    gap: 48px;
   }
 }

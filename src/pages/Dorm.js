@@ -1,206 +1,172 @@
-import React, { Component } from "react";
-import "./Dorm.css";
-import { useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useParams, Link } from "react-router-dom";
 import { DormData } from "../components/Dorms/DormsData";
-import { useState } from "react";
+import "./Dorm.css";
 
 import { FaBed, FaSink } from "react-icons/fa";
-import { BsFillPeopleFill, BsStars } from "react-icons/bs";
-import { SlSizeFullscreen } from "react-icons/sl";
+import { BsFillPeopleFill } from "react-icons/bs";
 import {
-  TbAirConditioning,
-  TbParking,
-  TbFileDescription,
-} from "react-icons/tb";
-import {
-  AiOutlineWifi,
   AiFillLeftCircle,
   AiFillRightCircle,
-  AiFillStar,
+  AiOutlineCheck,
 } from "react-icons/ai";
-import {
-  MdOutlineLocalLaundryService,
-  MdSoupKitchen,
-  MdOutlineDescription,
-} from "react-icons/md";
-import { ImBooks, ImQuotesLeft, ImQuotesRight } from "react-icons/im";
-import { RiStarSmileLine } from "react-icons/ri";
+import { ImQuotesLeft } from "react-icons/im";
 
-const Dorm = (props) => {
+const Dorm = () => {
   const { name } = useParams();
-  const dorm = DormData.find((dorm) => dorm.name === name);
+  const dorm = DormData.find((d) => d.name === name);
 
   const [index, setIndex] = useState(0);
-  const { studentName, quote, grade, avatar } = dorm.testimonials[index];
 
-  const prevTestimonialHandler = () => {
-    setIndex((prev) => prev - 1);
-    if (index <= 0) {
-      setIndex(dorm.testimonials.length - 1);
-    }
-  };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [name]);
 
-  const nextTestimonialHandler = () => {
-    setIndex((prev) => prev + 1);
-    if (index >= dorm.testimonials.length - 1) {
-      setIndex(0);
-    }
-  };
+  if (!dorm) {
+    return (
+      <div className="dorm dorm--missing">
+        <h1>We couldn't find that dorm</h1>
+        <Link to="/" className="dorm__back">
+          ← Back to all dorms
+        </Link>
+      </div>
+    );
+  }
+
+  const hasTestimonials = dorm.testimonials && dorm.testimonials.length > 0;
+  const testimonial = hasTestimonials ? dorm.testimonials[index] : null;
+
+  const prev = () =>
+    setIndex((i) => (i - 1 + dorm.testimonials.length) % dorm.testimonials.length);
+  const next = () => setIndex((i) => (i + 1) % dorm.testimonials.length);
 
   return (
     <div className="dorm">
-      <div className="dorm__container">
-        {dorm.embedLink ? (
-          <iframe className="dorm__tour" src={dorm.embedLink} allowFullScreen />
-        ) : (
-          <img className="dorm__picture" src={dorm.picture} alt="Dorm" />
-        )}
-        <div className="dorm__details">
-          <h1> {dorm.title} </h1>
-          <p> {dorm.address} </p>
-          <div className="dorm__specifics">
-            <div className="dorm__specifics__row">
-              <FaBed /> {dorm.bedCount} beds
+      <header className="dorm__hero">
+        <div className="dorm__hero-inner">
+          <Link to="/" className="dorm__back">
+            ← All dorms
+          </Link>
+          <h1 className="dorm__title">{dorm.title}</h1>
+          {dorm.address && <p className="dorm__address">{dorm.address}</p>}
+
+          <div className="dorm__quickfacts">
+            <div>
+              <FaBed />
+              <span>{dorm.bedCount} beds</span>
             </div>
-            <div className="dorm__specifics__row">
-              {dorm.sinks === 1 ? (
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <FaSink style={{ marginRight: "8px" }} />
-                  <span>1 sink</span>
-                </div>
-              ) : (
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <FaSink style={{ marginRight: "8px" }} />
-                  <span>{dorm.sinks} sinks</span>
-                </div>
-              )}
+            <div>
+              <FaSink />
+              <span>
+                {dorm.sinks} {dorm.sinks === 1 ? "sink" : "sinks"}
+              </span>
             </div>
-            <div className="dorm__specifics__row">
-              <BsFillPeopleFill /> {dorm.occupancy} people
+            <div>
+              <BsFillPeopleFill />
+              <span>{dorm.occupancy} people</span>
             </div>
           </div>
+
           <a
             className="dorm__pricing"
             href="https://www.scu.edu/living/residential-living-options/2022-2023-room--board-rates/"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            View prices
+            View room & board rates →
           </a>
         </div>
+      </header>
 
-        <div className="dorm__description__container">
-          <h2 className="header__text">
-            Description <TbFileDescription />
-          </h2>
-          <div className="dorm__description">{dorm.description}</div>
-        </div>
+      <section className="dorm__tour-wrap">
+        {dorm.embedLink ? (
+          <iframe
+            className="dorm__tour"
+            src={dorm.embedLink}
+            allowFullScreen
+            title={`${dorm.title} 3D tour`}
+          />
+        ) : (
+          <div className="dorm__tour-fallback">
+            <img src={dorm.picture} alt={dorm.title} />
+            <span className="dorm__tour-fallback-tag">3D tour coming soon</span>
+          </div>
+        )}
+      </section>
 
-        <h2 className="header__text">
-          Characteristics <RiStarSmileLine />
-        </h2>
-        <div className="dorm__spec__features">
-          <ul className="dorm__spec__features__list">
-            {dorm.features.map((feature, index) => (
-              <li key={index}>
-                <AiFillStar className="star__svg" /> {feature}
+      <main className="dorm__main">
+        <section className="dorm__section">
+          <h2 className="dorm__section-title">About this hall</h2>
+          <p className="dorm__description">{dorm.description}</p>
+        </section>
+
+        <section className="dorm__section">
+          <h2 className="dorm__section-title">What students get</h2>
+          <ul className="dorm__features">
+            {dorm.features.map((feature, i) => (
+              <li key={i}>
+                <AiOutlineCheck />
+                <span>{feature}</span>
               </li>
             ))}
           </ul>
-        </div>
+        </section>
 
-        <h2 className="header__text">
-          Dimensions <SlSizeFullscreen />
-        </h2>
-        <div className="dorm__dimensions__container">
+        <section className="dorm__section">
+          <h2 className="dorm__section-title">Room dimensions</h2>
           <div className="dorm__dimensions">
-            <div className="dimensions__text">Room Dimensions:</div>
-            <div className="dimensions__room__dimensions">
-              {dorm.dimensions}
+            <div className="dorm__dimensions-info">
+              <div className="dorm__dimensions-block">
+                <span className="dorm__dimensions-label">Room size</span>
+                <strong>{dorm.dimensions}</strong>
+              </div>
+              <div className="dorm__dimensions-block">
+                <span className="dorm__dimensions-label">Furniture</span>
+                <ul>
+                  {dorm.furnitureDimensions.map((d, i) => (
+                    <li key={i}>{d}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
-            <div className="dimensions__text">Furniture Dimensions:</div>
-            <ul>
-              {dorm.furnitureDimensions.map((dimension, index) => (
-                <li key={index}>{dimension}</li>
-              ))}
-            </ul>
+            <div className="dorm__dimensions-img">
+              <img src={dorm.layout} alt={`${dorm.title} layout`} />
+            </div>
           </div>
-          <div className="dorm__layout">
-            <img src={dorm.layout}></img>
-          </div>
-        </div>
+        </section>
 
-        <div className="dorm__features">
-          <h2 className="header__text">
-            Features <BsStars />
-          </h2>
-          <div className="dorm__features__container">
-            <div className="dorm__features__row1">
-              <div>
-                <TbAirConditioning /> Cooling depends on dorm
+        {hasTestimonials && (
+          <section className="dorm__section dorm__testimonials-section">
+            <h2 className="dorm__section-title">From students who lived here</h2>
+            <div className="dorm__testimonial">
+              <ImQuotesLeft className="dorm__testimonial-quote-icon" />
+              <p className="dorm__testimonial-quote">{testimonial.quote}</p>
+              <div className="dorm__testimonial-meta">
+                <img src={testimonial.avatar} alt={testimonial.studentName} />
+                <div>
+                  <strong>{testimonial.studentName}</strong>
+                  <span>{testimonial.grade}</span>
+                </div>
               </div>
-              <div>
-                <AiOutlineWifi /> High-speed internet
-              </div>
-              <div>
-                <MdOutlineLocalLaundryService /> Laundry room inside
-              </div>
+              {dorm.testimonials.length > 1 && (
+                <div className="dorm__testimonial-controls">
+                  <button onClick={prev} aria-label="Previous testimonial">
+                    <AiFillLeftCircle />
+                  </button>
+                  <span>
+                    {index + 1} / {dorm.testimonials.length}
+                  </span>
+                  <button onClick={next} aria-label="Next testimonial">
+                    <AiFillRightCircle />
+                  </button>
+                </div>
+              )}
             </div>
-            <div className="dorm__features__row2">
-              <div>
-                <TbParking /> Roadside & lot parking
-              </div>
-              <div>
-                <MdSoupKitchen /> Shared kitchen
-              </div>
-              <div>
-                <ImBooks /> Study rooms & areas
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <section className="testimonials">
-        <div className="container testimonials__container">
-          <h2 className="testimonials__head">
-            <ImQuotesLeft /> Testimonials <ImQuotesRight />
-          </h2>
-          <div className="testimonial">
-            <div className="testimonial__avatar">
-              <img src={avatar} alt={studentName} />
-            </div>
-            <p className="testimonial__quote">{`"${quote}"`}</p>
-            <h5 className="testimonal__student__name">{studentName}</h5>
-            <small className="testimonial__title">{grade}</small>
-          </div>
-          <div className="testimonials__btn-container">
-            <button
-              className="testimonials__btn"
-              onClick={prevTestimonialHandler}
-            >
-              <AiFillLeftCircle />
-            </button>
-            <button
-              className="testimonials__btn"
-              onClick={nextTestimonialHandler}
-            >
-              <AiFillRightCircle />
-            </button>
-          </div>
-        </div>
-      </section>
+          </section>
+        )}
+      </main>
     </div>
   );
 };
 
-class DormWithScroll extends Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
-
-  render() {
-    return <Dorm {...this.props} />;
-  }
-}
-
-export default DormWithScroll;
+export default Dorm;

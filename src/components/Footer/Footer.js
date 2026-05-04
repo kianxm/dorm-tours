@@ -1,71 +1,91 @@
 import React from "react";
+import { Link as Scroll } from "react-scroll";
 import "./Footer.css";
-import { Button } from "../Button/Button";
-import { Link } from "react-router-dom";
+
+const FOOTER_LINKS = [
+  { id: "dorms", label: "Dorms", offset: -50 },
+  { id: "about", label: "About", offset: -50 },
+  { id: "matterport", label: "Tech", offset: -60 },
+  { id: "faq", label: "FAQ", offset: -60 },
+];
 
 function Footer() {
+  const year = new Date().getFullYear();
+
   return (
-    <div className="footer-container">
-      <section className="footer-subscription">
-        <div class="social-icons">
-          <Link
-            class="social-icon-link facebook"
-            to="/"
-            target="_blank"
-            aria-label="Facebook"
-          >
-            <i class="fab fa-facebook-f" />
-          </Link>
-          <Link
-            class="social-icon-link instagram"
-            to="/"
-            target="_blank"
-            aria-label="Instagram"
-          >
-            <i class="fab fa-instagram" />
-          </Link>
-          <Link
-            class="social-icon-link youtube"
-            to="/"
-            target="_blank"
-            aria-label="Youtube"
-          >
-            <i class="fab fa-youtube" />
-          </Link>
-          <Link
-            class="social-icon-link twitter"
-            to="/"
-            target="_blank"
-            aria-label="Twitter"
-          >
-            <i class="fab fa-twitter" />
-          </Link>
-          <Link
-            class="social-icon-link twitter"
-            to="/"
-            target="_blank"
-            aria-label="LinkedIn"
-          >
-            <i class="fab fa-linkedin" />
-          </Link>
+    <footer className="footer">
+      <div className="footer__container">
+        <div className="footer__top">
+          <div className="footer__brand">
+            <h3>SCU Virtual Dorm Tours</h3>
+            <p>
+              Step inside every Santa Clara residence hall — from anywhere.
+            </p>
+          </div>
+
+          <nav className="footer__nav" aria-label="Footer">
+            <span className="footer__nav-title">Explore</span>
+            <ul>
+              {FOOTER_LINKS.map((link) => (
+                <li key={link.id}>
+                  <Scroll
+                    to={link.id}
+                    smooth
+                    offset={link.offset}
+                    duration={700}
+                  >
+                    {link.label}
+                  </Scroll>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div className="footer__resources">
+            <span className="footer__nav-title">Resources</span>
+            <ul>
+              <li>
+                <a
+                  href="https://www.scu.edu/living/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SCU Residential Living
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.scu.edu/living/discover/fysy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  First-Year & Sophomore Year
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.scu.edu/living/residential-living-options/2022-2023-room--board-rates/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Room & Board Rates
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <p className="footer-subscription-heading">
-          Sign up for our latest updates and information
-        </p>
-        <div className="input-areas">
-          <form>
-            <input
-              className="footer-input"
-              name="email"
-              type="email"
-              placeholder="Your Email"
-            />
-            <Button buttonStyle="btn--outline">Subscribe</Button>
-          </form>
+
+        <div className="footer__divider" />
+
+        <div className="footer__bottom">
+          <span>© {year} Santa Clara University</span>
+          <span>
+            Built by Eva Stenberg, Kian Malakooti, and Matthew Gates · Senior
+            Design Project
+          </span>
         </div>
-      </section>
-      <div className="copyright">© 2023 Santa Clara University</div>
-    </div>
+      </div>
+    </footer>
   );
 }
 

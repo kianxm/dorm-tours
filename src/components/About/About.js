@@ -1,71 +1,70 @@
 import React from "react";
 import "./About.css";
-import { Fade } from "react-reveal";
+import Reveal from "../Reveal/Reveal";
 
 import kian from "../../images/avatars/kianprofessional.jpg";
 import matty from "../../images/avatars/matty.jpeg";
 import eva from "../../images/avatars/eva.png";
 
+const team = [
+  {
+    name: "Eva Stenberg",
+    role: "Computer Science & Engineering",
+    img: eva,
+  },
+  {
+    name: "Kian Malakooti",
+    role: "Computer Science & Engineering",
+    img: kian,
+  },
+  {
+    name: "Matthew Gates",
+    role: "Computer Science & Engineering",
+    img: matty,
+  },
+];
+
 const About = () => {
   return (
-    <div className="about">
-      <div className="about-container">
-        <Fade top distance="10%">
-          <h1 className="about-header">About Us</h1>
-          <p className="about-description">
-            We are three senior computer engineering students at Santa Clara
-            University who created virtual reality tours for incoming students.
-            Our goal was to provide a way for students to explore the campus and
-            learn about the sociality of each housing option without having to
-            physically visit the university.
+    <section className="about" id="about">
+      <div className="about__container">
+        <Reveal as="header" className="about__header">
+          <span className="about__eyebrow">About the project</span>
+          <h2 className="about__title">
+            Built by SCU seniors, for the next generation of Broncos.
+          </h2>
+          <p className="about__lede">
+            We're three senior computer engineering students at Santa Clara
+            University. We built these immersive tours so incoming students can
+            explore campus housing — and the community inside each hall —
+            without ever needing to step on campus.
           </p>
-          <h3 className="about-subheader">Meet the Team</h3>
-          <div className="team-container">
-            <div className="team-member">
-              <img src={eva} alt="Student 1" className="team-member-img" />
-              <h4 className="team-member-name">Eva Stenberg</h4>
-              <p className="team-member-major">
-                Computer Science and Engineering
-              </p>
-            </div>
-            <div className="team-member">
-              <img src={kian} alt="Student 2" className="team-member-img" />
-              <h4 className="team-member-name">Kian Malakooti</h4>
-              <p className="team-member-major">
-                Computer Science and Engineering
-              </p>
-            </div>
-            <div className="team-member">
-              <img src={matty} alt="Student 3" className="team-member-img" />
-              <h4 className="team-member-name">Matthew Gates</h4>
-              <p className="team-member-major">
-                Computer Science and Engineering
-              </p>
-            </div>
-          </div>
-          <div className="acknowledgments">
-            <h3 className="acknowledgements-header">Acknowledgements</h3>
-            <p>
-              We would like to thank the following people for their help and
-              support in creating this project:
-            </p>
-            <ul className="ack-ul">
-              <li>
-                Our faculty advisor Dr. Kai Lukoff for helping us bring this
-                project to life using his knowledge of human centered design
-                methods in research and design to guide us through the
-                complexities and milestones throughout the quarter, our
-                partnering HCI teams, the SAR Team and Storytelling team whose
-                own participation contributed to our project, Luke Ponssen, and
-                most importantly, our families and friends that have supported
-                us in our four years at Santa Clara University and without which
-                we would not be where we are today. Thank you!
-              </li>
-            </ul>
-          </div>
-        </Fade>
+        </Reveal>
+
+        <div className="about__team">
+          {team.map((member, i) => (
+            <Reveal key={member.name} className="about__member" delay={i + 1}>
+              <div className="about__avatar">
+                <img src={member.img} alt={member.name} />
+              </div>
+              <h3 className="about__name">{member.name}</h3>
+              <p className="about__role">{member.role}</p>
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal className="about__credits">
+          <h3>Acknowledgements</h3>
+          <p>
+            Thank you to our faculty advisor <strong>Dr. Kai Lukoff</strong> for
+            his guidance through human-centered design methods, our partnering
+            HCI teams (the SAR and Storytelling teams), <strong>Luke Ponssen</strong>,
+            and — most importantly — our families and friends for four
+            unforgettable years at Santa Clara.
+          </p>
+        </Reveal>
       </div>
-    </div>
+    </section>
   );
 };
 

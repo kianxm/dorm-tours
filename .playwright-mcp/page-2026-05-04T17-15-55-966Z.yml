@@ -1,0 +1,323 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e4]:
+      - link "SCU Virtual Dorm Tours" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "SCU Virtual Dorm Tours" [ref=e6]
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - generic [ref=e9] [cursor=pointer]: Dorms
+        - listitem [ref=e10]:
+          - generic [ref=e11] [cursor=pointer]: About
+        - listitem [ref=e12]:
+          - generic [ref=e13] [cursor=pointer]: Tech
+        - listitem [ref=e14]:
+          - generic [ref=e15] [cursor=pointer]: FAQ
+    - list [ref=e17]:
+      - listitem [ref=e18]:
+        - generic [ref=e19] [cursor=pointer]: Dorms
+      - listitem [ref=e20]:
+        - generic [ref=e21] [cursor=pointer]: About
+      - listitem [ref=e22]:
+        - generic [ref=e23] [cursor=pointer]: Tech
+      - listitem [ref=e24]:
+        - generic [ref=e25] [cursor=pointer]: FAQ
+  - generic [ref=e26]:
+    - generic [ref=e30]:
+      - generic [ref=e31]: Santa Clara University
+      - heading "Discover your dream dorm before you arrive." [level=1] [ref=e32]:
+        - text: Discover your dream dorm
+        - text: before you arrive.
+      - paragraph [ref=e33]: Step inside every residence hall with immersive 3D tours. Compare rooms, explore amenities, and find the community that fits you best.
+      - generic [ref=e34]:
+        - generic [ref=e35] [cursor=pointer]:
+          - text: Explore dorms
+          - img [ref=e36]
+        - generic [ref=e38] [cursor=pointer]: How it works
+      - list [ref=e39]:
+        - listitem [ref=e40]:
+          - strong [ref=e41]: "12"
+          - generic [ref=e42]: residence halls
+        - listitem [ref=e43]:
+          - strong [ref=e44]: 8+
+          - generic [ref=e45]: immersive scans
+        - listitem [ref=e46]:
+          - strong [ref=e47]: 360°
+          - generic [ref=e48]: walk-throughs
+    - generic "Scroll to dorms" [ref=e49] [cursor=pointer]
+  - generic [ref=e52]:
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e55]: 01 — On Campus
+        - heading "On-campus residence halls" [level=2] [ref=e56]
+        - paragraph [ref=e57]: Step inside every freshman and sophomore dorm. Compare community styles, room layouts, and locations side by side.
+      - generic [ref=e58]:
+        - link "Campisi Hall View tour" [ref=e59] [cursor=pointer]:
+          - /url: /dorms/campisi-hall
+          - figure [ref=e60]:
+            - img "Campisi Hall" [ref=e61]
+            - text: Quiet
+          - generic [ref=e62]:
+            - heading "Campisi Hall" [level=5] [ref=e63]
+            - generic [ref=e64]:
+              - text: View tour
+              - img [ref=e65]
+        - link "Casa Italiana Hall View tour" [ref=e67] [cursor=pointer]:
+          - /url: /dorms/casa-hall
+          - figure [ref=e68]:
+            - img "Casa Italiana Hall" [ref=e69]
+            - text: Comfortable
+          - generic [ref=e70]:
+            - heading "Casa Italiana Hall" [level=5] [ref=e71]
+            - generic [ref=e72]:
+              - text: View tour
+              - img [ref=e73]
+        - link "Dunne Hall View tour" [ref=e75] [cursor=pointer]:
+          - /url: /dorms/dunne-hall
+          - figure [ref=e76]:
+            - img "Dunne Hall" [ref=e77]
+            - text: Lively
+          - generic [ref=e78]:
+            - heading "Dunne Hall" [level=5] [ref=e79]
+            - generic [ref=e80]:
+              - text: View tour
+              - img [ref=e81]
+        - link "Finn Hall View tour" [ref=e83] [cursor=pointer]:
+          - /url: /dorms/finn-hall
+          - figure [ref=e84]:
+            - img "Finn Hall" [ref=e85]
+            - text: Spacious
+          - generic [ref=e86]:
+            - heading "Finn Hall" [level=5] [ref=e87]
+            - generic [ref=e88]:
+              - text: View tour
+              - img [ref=e89]
+        - link "Sanfilippo Hall View tour" [ref=e91] [cursor=pointer]:
+          - /url: /dorms/sanfillipo-hall
+          - figure [ref=e92]:
+            - img "Sanfilippo Hall" [ref=e93]
+            - text: Relaxed
+          - generic [ref=e94]:
+            - heading "Sanfilippo Hall" [level=5] [ref=e95]
+            - generic [ref=e96]:
+              - text: View tour
+              - img [ref=e97]
+        - link "Graham Hall View tour" [ref=e99] [cursor=pointer]:
+          - /url: /dorms/graham-hall
+          - figure [ref=e100]:
+            - img "Graham Hall" [ref=e101]
+            - text: Well-rounded
+          - generic [ref=e102]:
+            - heading "Graham Hall" [level=5] [ref=e103]
+            - generic [ref=e104]:
+              - text: View tour
+              - img [ref=e105]
+        - link "McLaughlin–Walsh Hall View tour" [ref=e107] [cursor=pointer]:
+          - /url: /dorms/mcwalsh-hall
+          - figure [ref=e108]:
+            - img "McLaughlin–Walsh Hall" [ref=e109]
+            - text: Cozy
+          - generic [ref=e110]:
+            - heading "McLaughlin–Walsh Hall" [level=5] [ref=e111]
+            - generic [ref=e112]:
+              - text: View tour
+              - img [ref=e113]
+        - link "Sobrato Hall View tour" [ref=e115] [cursor=pointer]:
+          - /url: /dorms/sobrato-hall
+          - figure [ref=e116]:
+            - img "Sobrato Hall" [ref=e117]
+            - text: Studious
+          - generic [ref=e118]:
+            - heading "Sobrato Hall" [level=5] [ref=e119]
+            - generic [ref=e120]:
+              - text: View tour
+              - img [ref=e121]
+        - link "Swig Hall View tour" [ref=e123] [cursor=pointer]:
+          - /url: /dorms/swig-hall
+          - figure [ref=e124]:
+            - img "Swig Hall" [ref=e125]
+            - text: Active
+          - generic [ref=e126]:
+            - heading "Swig Hall" [level=5] [ref=e127]
+            - generic [ref=e128]:
+              - text: View tour
+              - img [ref=e129]
+    - generic [ref=e131]:
+      - generic [ref=e132]:
+        - generic [ref=e133]: 02 — Upperclassmen
+        - heading "Additional undergraduate housing" [level=2] [ref=e134]
+        - paragraph [ref=e135]: Apartment-style living and quieter halls for juniors and seniors who want more independence.
+      - generic [ref=e136]:
+        - link "University Villas View tour" [ref=e137] [cursor=pointer]:
+          - /url: /dorms/villas
+          - figure [ref=e138]:
+            - img "University Villas" [ref=e139]
+            - text: Upperclassmen
+          - generic [ref=e140]:
+            - heading "University Villas" [level=5] [ref=e141]
+            - generic [ref=e142]:
+              - text: View tour
+              - img [ref=e143]
+        - link "Nobili Hall View tour" [ref=e145] [cursor=pointer]:
+          - /url: /dorms/nobili-hall
+          - figure [ref=e146]:
+            - img "Nobili Hall" [ref=e147]
+            - text: Quiet
+          - generic [ref=e148]:
+            - heading "Nobili Hall" [level=5] [ref=e149]
+            - generic [ref=e150]:
+              - text: View tour
+              - img [ref=e151]
+        - link "Neighborhood Units View tour" [ref=e153] [cursor=pointer]:
+          - /url: https://www.scu.edu/living/residential-living-options/additional-undergraduate-housing/neighborhood-units/
+          - figure [ref=e154]:
+            - img "Neighborhood Units" [ref=e155]
+            - text: Upperclassmen
+          - generic [ref=e156]:
+            - heading "Neighborhood Units" [level=5] [ref=e157]
+            - generic [ref=e158]:
+              - text: View tour
+              - img [ref=e159]
+    - generic [ref=e161]:
+      - generic [ref=e162]:
+        - generic [ref=e163]: 03 — Graduate & Law
+        - heading "Graduate & law housing" [level=2] [ref=e164]
+        - paragraph [ref=e165]: Dedicated communities and apartments designed for graduate and law students.
+      - generic [ref=e166]:
+        - link "Bellarmine Hall View tour" [ref=e167] [cursor=pointer]:
+          - /url: https://www.scu.edu/living/residential-living-options/graduate/graduate--law-living-options/bellarmine/
+          - figure [ref=e168]:
+            - img "Bellarmine Hall" [ref=e169]
+            - text: Graduate
+          - generic [ref=e170]:
+            - heading "Bellarmine Hall" [level=5] [ref=e171]
+            - generic [ref=e172]:
+              - text: View tour
+              - img [ref=e173]
+        - link "Park Avenue Apartments View tour" [ref=e175] [cursor=pointer]:
+          - /url: https://www.scu.edu/living/residential-living-options/graduate/graduate--law-living-options/park-avenue-apartments/
+          - figure [ref=e176]:
+            - img "Park Avenue Apartments" [ref=e177]
+            - text: Graduate
+          - generic [ref=e178]:
+            - heading "Park Avenue Apartments" [level=5] [ref=e179]
+            - generic [ref=e180]:
+              - text: View tour
+              - img [ref=e181]
+        - link "St. Clare Hall View tour" [ref=e183] [cursor=pointer]:
+          - /url: https://www.scu.edu/living/residential-living-options/graduate/graduate--law-living-options/st-clare-hall/
+          - figure [ref=e184]:
+            - img "St. Clare Hall" [ref=e185]
+            - text: Graduate
+          - generic [ref=e186]:
+            - heading "St. Clare Hall" [level=5] [ref=e187]
+            - generic [ref=e188]:
+              - text: View tour
+              - img [ref=e189]
+  - generic [ref=e192]:
+    - generic [ref=e193]:
+      - generic [ref=e194]: About the project
+      - heading "Built by SCU seniors, for the next generation of Broncos." [level=2] [ref=e195]
+      - paragraph [ref=e196]: We're three senior computer engineering students at Santa Clara University. We built these immersive tours so incoming students can explore campus housing — and the community inside each hall — without ever needing to step on campus.
+    - generic [ref=e197]:
+      - generic [ref=e198]:
+        - img "Eva Stenberg" [ref=e200]
+        - heading "Eva Stenberg" [level=3] [ref=e201]
+        - paragraph [ref=e202]: Computer Science & Engineering
+      - generic [ref=e203]:
+        - img "Kian Malakooti" [ref=e205]
+        - heading "Kian Malakooti" [level=3] [ref=e206]
+        - paragraph [ref=e207]: Computer Science & Engineering
+      - generic [ref=e208]:
+        - img "Matthew Gates" [ref=e210]
+        - heading "Matthew Gates" [level=3] [ref=e211]
+        - paragraph [ref=e212]: Computer Science & Engineering
+    - generic [ref=e213]:
+      - heading "Acknowledgements" [level=3] [ref=e214]
+      - paragraph [ref=e215]:
+        - text: Thank you to our faculty advisor
+        - strong [ref=e216]: Dr. Kai Lukoff
+        - text: for his guidance through human-centered design methods, our partnering HCI teams (the SAR and Storytelling teams),
+        - strong [ref=e217]: Luke Ponssen
+        - text: ", and — most importantly — our families and friends for four unforgettable years at Santa Clara."
+  - generic [ref=e219]:
+    - generic [ref=e220]:
+      - img "Matterport" [ref=e221]
+      - heading "Immersive scans, captured with Matterport technology." [level=2] [ref=e222]
+      - paragraph [ref=e223]: Using LiDAR-equipped 3D cameras, every dorm has been mapped into an interactive walk-through. Future Broncos can explore the rooms, common areas, and the social feel of a hall before ever setting foot on campus.
+      - list [ref=e224]:
+        - listitem [ref=e225]:
+          - generic [ref=e226]: "01"
+          - generic [ref=e227]:
+            - strong [ref=e228]: LiDAR-grade 3D capture
+            - paragraph [ref=e229]: Every space scanned with sub-millimeter precision so you experience the room exactly as it is.
+        - listitem [ref=e230]:
+          - generic [ref=e231]: "02"
+          - generic [ref=e232]:
+            - strong [ref=e233]: Walk anywhere, look anywhere
+            - paragraph [ref=e234]: Step through the entire dorm — the lounge, the bathroom, even the view from the window — at your own pace.
+        - listitem [ref=e235]:
+          - generic [ref=e236]: "03"
+          - generic [ref=e237]:
+            - strong [ref=e238]: Dollhouse & floorplan views
+            - paragraph [ref=e239]: Toggle to a top-down floorplan or a doll-house cutaway to understand the layout instantly.
+    - img "3D dollhouse view of a dorm scan" [ref=e242]
+  - generic [ref=e244]:
+    - generic [ref=e245]:
+      - generic [ref=e246]: FAQ
+      - heading "Everything you might be wondering." [level=2] [ref=e247]
+      - paragraph [ref=e248]: Quick answers about how the tours work and what to expect.
+    - list [ref=e249]:
+      - listitem [ref=e250]:
+        - button "What are virtual dorm tours?" [expanded] [ref=e251] [cursor=pointer]:
+          - generic [ref=e252]: What are virtual dorm tours?
+        - region [ref=e256]:
+          - generic [ref=e257]: Virtual dorm tours let incoming students explore Santa Clara residence halls in 3D — captured with LiDAR-equipped cameras so the experience matches the real space. You get a feel for the layout and the social vibe of each hall before stepping on campus.
+      - listitem [ref=e258]:
+        - button "How do I view a dorm in 3D?" [ref=e259] [cursor=pointer]:
+          - generic [ref=e260]: How do I view a dorm in 3D?
+        - region:
+          - generic: Tap any dorm card on the homepage. The 3D scan loads in your browser — click "Enter" and you can walk through the lobby, lounges, and rooms freely.
+      - listitem [ref=e264]:
+        - button "Which residence halls are available?" [ref=e265] [cursor=pointer]:
+          - generic [ref=e266]: Which residence halls are available?
+        - region:
+          - generic: All on-campus first- and second-year halls plus University Villas and Nobili Hall for upperclassmen. Singles, doubles, mini-suites, and apartment-style options are all represented.
+      - listitem [ref=e270]:
+        - button "Will I see room dimensions and layouts?" [ref=e271] [cursor=pointer]:
+          - generic [ref=e272]: Will I see room dimensions and layouts?
+        - region:
+          - generic: Yes. Each dorm page lists room dimensions, furniture sizes, and a floorplan image so you can plan exactly how your space will fit together.
+      - listitem [ref=e276]:
+        - button "Can I customize my virtual room?" [ref=e277] [cursor=pointer]:
+          - generic [ref=e278]: Can I customize my virtual room?
+        - region:
+          - generic: Not yet. We're scoping a future update where students can place furniture and decor inside the scan to plan move-in day.
+  - contentinfo [ref=e282]:
+    - generic [ref=e283]:
+      - generic [ref=e284]:
+        - generic [ref=e285]:
+          - heading "SCU Virtual Dorm Tours" [level=3] [ref=e286]
+          - paragraph [ref=e287]: Step inside every Santa Clara residence hall — from anywhere.
+        - navigation "Footer" [ref=e288]:
+          - generic [ref=e289]: Explore
+          - list [ref=e290]:
+            - listitem [ref=e291]: Dorms
+            - listitem [ref=e292]: About
+            - listitem [ref=e293]: Tech
+            - listitem [ref=e294]: FAQ
+        - generic [ref=e295]:
+          - generic [ref=e296]: Resources
+          - list [ref=e297]:
+            - listitem [ref=e298]:
+              - link "SCU Residential Living" [ref=e299] [cursor=pointer]:
+                - /url: https://www.scu.edu/living/
+            - listitem [ref=e300]:
+              - link "First-Year & Sophomore Year" [ref=e301] [cursor=pointer]:
+                - /url: https://www.scu.edu/living/discover/fysy/
+            - listitem [ref=e302]:
+              - link "Room & Board Rates" [ref=e303] [cursor=pointer]:
+                - /url: https://www.scu.edu/living/residential-living-options/2022-2023-room--board-rates/
+      - generic [ref=e305]:
+        - generic [ref=e306]: © 2026 Santa Clara University
+        - generic [ref=e307]: Built by Eva Stenberg, Kian Malakooti, and Matthew Gates · Senior Design Project
